@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <record id="view_car_repair_form" model="ir.ui.view">
+            <field name="name">car.repair.form.form</field>
+            <field name="model">car.repair.form</field>
+            <field name="arch" type="xml">
+                <form string="Car Repair Form">
+                    <header>
+                        <!--                        <button name="create_membership" string="Create Membership" type="object" class="oe_highlight"/>-->
+                        <button name="action_receive" string="Receive" type="object"
+                                attrs="{'invisible': [('state', 'in', ['received', 'diagnosis', 'progress', 'done'])]}"/>
+                        <button name="action_progress" string="Work in Progress" type="object"
+                                attrs="{'invisible': [('state', 'not in', ['received'])]}"/>
+                        <button name="action_done" string="Done" type="object"
+                                attrs="{'invisible': [('state', '!=', 'progress')]}"/>
+                        <button name="action_create_diagnosis" string="Create Diagnosis" class="oe_highlight"
+                                type="object"/>
+                        <button name="action_create_estimate" string="Create Estimate" class="oe_highlight"
+                                type="object"/>
+                        <field name="state" widget="statusbar"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                            <button type="object"
+                                    name="show_diagnosis"
+                                    class="oe_stat_button"
+                                    icon="fa-pencil-square-o">
+                                <field name="diagnosis_count" widget="statinfo" string="Diagnoses"/>
+                            </button>
+                            <button type="object"
+                                    name="show_estimates"
+                                    class="oe_stat_button"
+                                    icon="fa-pencil-square-o">
+                                <field name="estimate_count" widget="statinfo" string="Estimate"/>
+                            </button>
+                        </div>
+                        <group>
+                            <group string="Customer Information">
+                                <field name="customer"/>
+                                <field name="mobile"/>
+                                <field name="email"/>
+                                <field name="membership_id"/>
+                                <field name="priority" widget="priority"/>
+                                <field name="user_id"/>
+                                <field name="date_received"/>
+                            </group>
+                            <group string="Car Information">
+                                <field name="car_id"/>
+                                <field name="brand"/>
+                                <field name="model"/>
+                                <field name="fuel_type"/>
+                                <field name="color"/>
+                                <field name="service_id"/>
+                                <field name="repair_date"/>
+                            </group>
+                        </group>
+                        <group>
+                            <field name="repair_notes"/>
+                        </group>
+                        <notebook>
+                            <page string="Tasks and Timesheet">
+                                <group>
+                                    <group>
+                                        <field name="project_id"/>
+                                    </group>
+                                    <group>
+                                        <field name="task_ids" widget="many2many_tags"/>
+                                    </group>
+                                </group>
+                                <field name="timesheet_ids" mode="tree,kanban" widget="timesheet_widget"/>
+                            </page>
+                            <page string="Checklists">
+                                <field name="checklist_ids">
+                                    <tree>
+                                        <field name="name"/>
+                                        <field name="desc"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_car_repair_tree" model="ir.ui.view">
+            <field name="name">car.repair.form.tree</field>
+            <field name="model">car.repair.form</field>
+            <field name="arch" type="xml">
+                <tree string="Car Repair">
+                    <field name="customer"/>
+                    <field name="mobile"/>
+                    <field name="car_id"/>
+                    <field name="brand"/>
+                    <field name="model"/>
+                    <field name="user_id"/>
+                    <field name="repair_date"/>
+                    <field name="repair_notes"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="car_repair_kanban_view" model="ir.ui.view">
+            <field name="name">car.repair.form.kanban</field>
+            <field name="model">car.repair.form</field>
+            <field name="arch" type="xml">
+                <kanban default_group_by="state">
+                    <field name="state" position="before">
+                        <field name="repair_date" />
+                    </field>
+            <templates>
+                <t t-name="kanban-box">
+                    <div t-attf-class="oe_kanban_global_click">
+                        <div class="oe_kanban_details d-flex flex-column">
+                            <div class="oe_kanban_content flex-grow-1">
+                                <div class="o_kanban_record_title oe_kanban_details">
+                                    <strong><field name="name" /></strong>
+                                </div>
+                                <div class="o_kanban_record_subtitle">
+                                    <field name="customer" />
+                                </div>
+                                <div class="o_kanban_record_subtitle">
+                                    <field name="car_id" />
+                                </div>
+                                <div class="oe_kanban_footer">
+                                    <div class="o_kanban_record_bottom">
+                                        <div class="oe_kanban_bottom_left">
+                                            <field name="repair_date" />
+                                        </div>
+                                        <div class="oe_kanban_bottom_right">
+                                            <field name="user_id" widget="many2one_avatar_user" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix" />
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </templates>
+        </kanban>
+            </field>
+        </record>
+
+        <record id="action_car_repair" model="ir.actions.act_window">
+            <field name="name">Car Repair Form</field>
+            <field name="res_model">car.repair.form</field>
+            <field name="view_mode">kanban,tree,form</field>
+        </record>
+
+        <menuitem id="menu_car_repair_main"
+                  name="Car Repair"
+                  parent="car_repair_main_menu"
+                  sequence="2"/>
+
+        <menuitem id="menu_car_repair"
+                  name="Car Repair Form"
+                  parent="menu_car_repair_main"
+                  action="car_repair_maintenance_axis.action_car_repair"
+                  sequence="1"/>
+    </data>
+</odoo>
+

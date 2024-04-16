@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_car_repair_diagnosis_tree" model="ir.ui.view">
+            <field name="name">car.repair.diagnosis.tree</field>
+            <field name="model">car.repair.diagnosis</field>
+            <field name="arch" type="xml">
+                <tree string="Car Repair Diagnosis">
+                    <field name="name"/>
+                    <field name="car_id"/>
+                    <field name="customer"/>
+                    <field name="description"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_car_repair_diagnosis_form" model="ir.ui.view">
+            <field name="name">car.repair.diagnosis.form</field>
+            <field name="model">car.repair.diagnosis</field>
+            <field name="arch" type="xml">
+                <form string="Car Repair Diagnosis">
+                    <header>
+                        <button name="create_quotation" string="Create Quotation" type="object" class="oe_highlight"/>
+                        <button name="create_work_order" string="Create Work Order" type="object" class="btn-primary"/>
+                        <button name="action_confirm" string="Confirm" type="object"
+                                attrs="{'invisible': [('state', '!=', 'draft')]}"/>
+                        <button name="action_done" string="Done" type="object"
+                                attrs="{'invisible': [('state', '!=', 'confirmed')]}"/>
+                        <field name="state" widget="statusbar"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                            <button type="object"
+                                    name="show_quotations"
+                                    class="oe_stat_button"
+                                    icon="fa-pencil-square-o">
+                                <field name="quotation_count" widget="statinfo" string="Quotations"/>
+                            </button>
+                            <button type="object"
+                                    name="show_repair_orders"
+                                    class="oe_stat_button"
+                                    icon="fa-pencil-square-o">
+                                <field name="repair_order_count" widget="statinfo" string="Repair Orders"/>
+                            </button>
+                            <button name="show_work_orders"
+                                    type="object"
+                                    string="Work Orders"
+                                    class="oe_highlight"
+                                    icon="fa-wrench">
+                                <field name="work_order_count" widget="statinfo" string="Work Orders"/>
+                            </button>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="subject"/>
+                                <field name="user_id"/>
+                            </group>
+                            <group>
+                                <field name="date_confirmed" readonly="1"/>
+                                <field name="date_done" readonly="1"/>
+                            </group>
+                            <notebook>
+                                <page string="General Information">
+                                    <group>
+                                        <group>
+                                            <field name="customer"/>
+                                            <field name="mobile"/>
+                                            <field name="email"/>
+                                            <field name="car_id"/>
+                                        </group>
+                                        <group>
+                                            <field name="brand"/>
+                                            <field name="model"/>
+                                            <field name="car_number"/>
+                                            <field name="fuel_type"/>
+                                        </group>
+                                    </group>
+                                    <field name="description" placeholder="Diagnosis Description"/>
+
+                                </page>
+                                <page string="Checklists">
+                                    <field name="checklist_ids">
+                                        <tree>
+                                            <field name="name"/>
+                                            <field name="desc"/>
+                                        </tree>
+                                    </field>
+                                </page>
+                                <page string="Service Details">
+                                    <group>
+                                        <group>
+                                            <field name="guarantee"/>
+                                            <field name="guarantee_type"/>
+                                        </group>
+                                        <group>
+                                            <field name="service_nature"/>
+                                        </group>
+                                    </group>
+                                </page>
+                                <page string="Diagnosis Report">
+                                    <group>
+                                        <group>
+                                            <field name="estimated_hours"/>
+                                        </group>
+                                        <group>
+                                            <field name="service_charges"/>
+                                        </group>
+                                    </group>
+                                    <field name="diagnosis_line_ids" nolabel="1">
+                                        <tree editable="bottom">
+                                            <field name="product_id"/>
+                                            <field name="product_code"/>
+                                            <field name="quantity"/>
+                                            <field name="unit_price"/>
+                                            <field name="subtotal"/>
+                                        </tree>
+                                    </field>
+                                    <field name="notes" string="Diagnostic Results"/>
+                                </page>
+                            </notebook>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="seq_car_repair_diagnosis" model="ir.sequence">
+            <field name="name">Car Repair Diagnosis Sequence</field>
+            <field name="code">car.repair.diagnosis</field>
+            <field name="prefix">CAR-DGN</field>
+            <field name="padding">3</field>
+        </record>
+
+        <record id="action_car_repair_diagnosis" model="ir.actions.act_window">
+            <field name="name">Car Repair Diagnosis</field>
+            <field name="res_model">car.repair.diagnosis</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_car_repair_diagnosis"
+                  name="Car Repair Diagnosis"
+                  parent="menu_car_repair_main"
+                  sequence="3" action="action_car_repair_diagnosis"/>
+
+        <record id="view_res_users_simple_form" model="ir.ui.view">
+            <field name="name">res.users.simple.form</field>
+            <field name="model">res.users</field>
+            <field name="arch" type="xml">
+                <form string="Select User" version="7.0">
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="form_view_car_repair_request" model="ir.ui.view">
+        <field name="name">car.repair.request.form</field>
+        <field name="model">car.repair.request</field>
+        <field name="arch" type="xml">
+            <form string="Car Repair Request">
+                <header>
+                    <button name="action_approve_request" type="object" string="Approve"/>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="customer_id"/>
+                        <field name="phone"/>
+                        <field name="email"/>
+                    </group>
+                    <notebook>
+                        <page string="Car Repair Details">
+                            <group>
+                                <group>
+                                    <field name="reason_for_repair"/>
+                                    <field name="service_id"/>
+                                    <field name="car_id"/>
+                                    <field name="brand"/>
+                                </group>
+                                <group>
+                                    <field name="reason_details"/>
+                                    <field name="list_of_damage"/>
+                                    <field name="priority" widget="priority"/>
+                                    <!-- <field name="attachment_ids" widget="many2many_tags"/> -->
+                                    <field name="attachment"/>
+                                </group>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="tree_view_car_repair_request" model="ir.ui.view">
+        <field name="name">car.repair.request.tree</field>
+        <field name="model">car.repair.request</field>
+        <field name="arch" type="xml">
+            <tree string="Care Repair Request">
+                <field name="name"/>
+                <field name="email"/>
+                <field name="car_id"/>
+                <field name="service_id"/>
+                <field name="reason_for_repair"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="action_view_car_repair_request" model="ir.actions.act_window">
+        <field name="name">Portal Repair Request</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">car.repair.request</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <menuitem id="car_repair_request"
+              name="Portal Repair Request"
+              parent="car_repair_main_menu"
+              action="action_view_car_repair_request"
+              sequence="10"/>
+
+</odoo>

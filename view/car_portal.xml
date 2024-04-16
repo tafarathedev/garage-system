@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+
+    <template id="portal_my_home_menu_tickets"
+              name="Portal layout : upcoming tickets"
+              inherit_id="portal.portal_breadcrumbs" priority="30">
+        <xpath expr="//ol[hasclass('o_portal_submenu')]" position="inside">
+            <li t-if="page_name == 'car_request'">
+                <a t-if="car_request" t-attf-href="/my/car">/ Car Repair Request</a>
+                <t t-else="">/Car Repair</t>
+            </li>
+        </xpath>
+    </template>
+
+
+    <template id="portal_my_home_car_repair" name="Car"
+              inherit_id="portal.portal_my_home" priority="1"
+              customize_show="True">
+        <xpath expr="//div[hasclass('o_portal_docs')]" position="inside">
+            <t t-call="portal.portal_docs_entry">
+                <t t-set="title">Car Repair</t>
+                <t t-set="url" t-value="'/my/car'"/>
+                <t t-set="placeholder_count" t-value="'car_request_count'"/>
+            </t>
+        </xpath>
+    </template>
+
+
+    <template id="portal_my_car_requests" name="Car Requests">
+        <t t-call="portal.portal_layout">
+            <t t-set="breadcrumbs_searchbar" t-value="True"/>
+
+            <t t-call="portal.portal_searchbar">
+                <t t-set="title">Car Requests</t>
+            </t>
+
+            <t t-call="portal.portal_table">
+                <thead>
+                    <tr class="active">
+                        <th>
+                            <span class='d-none d-md-inline'>Name</span>
+                        </th>
+                        <th class="text-end">Car Name</th>
+                        <th class="text-end">Phone</th>
+                    </tr>
+                </thead>
+                <t t-foreach="car_request" t-as="request">
+                    <tr>
+                        <td>
+                            <a>
+                                <t t-esc="request.name"/>
+                            </a>
+                        </td>
+                        <td class="text-end">
+                            <span t-esc="request.name" />&amp;nbsp;
+                        </td>
+                        <td class="text-end">
+                            <span t-esc="request.phone"/>
+                        </td>
+                    </tr>
+                </t>
+            </t>
+        </t>
+    </template>
+
+
+
+
+    <template id="portal_my_car_requests" name="Car Requests">
+        <t t-call="portal.portal_layout">
+            <t t-set="breadcrumbs_searchbar" t-value="True"/>
+
+            <t t-call="portal.portal_searchbar">
+                <t t-set="title">Car Requests</t>
+            </t>
+
+            <t t-call="portal.portal_table">
+                <thead>
+                    <tr class="active">
+                        <th>
+                            <span class='d-none d-md-inline'>Name</span>
+
+                        </th>
+                        <th class="text-end">Car Name</th>
+                        <th class="text-end">Phone</th>
+                    </tr>
+                </thead>
+                <t t-foreach="car_request" t-as="request">
+                    <tr>
+                        <td>
+                            <a>
+                                <t t-esc="request.name"/>
+                            </a>
+                        </td>
+                        <td class="text-end">
+                            <span t-esc="request.name" />&amp;nbsp;
+                        </td>
+                        <td class="text-end">
+                            <span t-esc="request.phone"/>
+                        </td>
+                    </tr>
+                </t>
+            </t>
+        </t>
+    </template>
+
+
+        <template id="portal_my_car_requests" name="Car Requests">
+        <t t-call="portal.portal_layout">
+            <t t-set="breadcrumbs_searchbar" t-value="True"/>
+
+            <t t-call="portal.portal_searchbar">
+                <t t-set="title">Car Requests</t>
+            </t>
+
+            <t t-call="portal.portal_table">
+                <thead>
+                    <tr class="active">
+                        <th>
+                            <span class='d-none d-md-inline'>Name</span>
+
+                        </th>
+                        <th class="text-end">Car Name</th>
+                        <th class="text-end">Phone</th>
+                    </tr>
+                </thead>
+                <t t-foreach="car_request" t-as="request">
+                    <tr>
+                        <td>
+                            <a>
+                                <t t-esc="request.name"/>
+                            </a>
+                        </td>
+                        <td class="text-end">
+                            <span t-esc="request.name" />&amp;nbsp;
+                        </td>
+                        <td class="text-end">
+                            <span t-esc="request.phone"/>
+                        </td>
+                    </tr>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <!-- Report Tempalte for Car -->
+    <template id="car_content_preview" name="Car Request Portal Content">
+    <div id="introduction" t-attf-class="pb-2 pt-3 #{'card-header bg-white' if report_type == 'html' else ''}" style="height:700px;">
+        <div class="container">
+            <h4 class="mb-0" style="margin-left:15px;"><b><t t-esc="details['display_name']"/></b></h4>
+            <hr style="width:100%"/>
+        </div>
+    </div>
+
+    </template>
+    <!-- REport End -->
+
+    <template id="car_repair_template" name="Partner Form">
+        <t t-call="website.layout">
+            <div id="wrap">
+                <div class="container">
+                    <div class="col-md-12">
+                        <form action="/car/form/submit">
+                            <!-- Enter Personal Details -->
+                            <h2>Personal Details</h2>
+                            <div class="form-group">
+                                <label for="name">Name :</label>
+                                <input type="text" class="form-control" name="name" id="name" required="true"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email :</label>
+                                <input type="email" class="form-control" name="email"
+                                       id="email" required="true"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Phone :</label>
+                                <input type="text" class="form-control" name="phone"
+                                       id="phone" required="true"/>
+                            </div>
+                            <h2>Car Repair Details</h2>
+<!--                            Car-->
+
+                            <div class="form-group">
+                                <label class="col-form-label o_fake_editable" for="car_id">
+                                    Car Name :
+                                </label>
+
+                                <select class="form-control o_website_form_input" name="car_id"
+                                        required="1">
+                                    <option>
+                                        <t t-foreach="car_id" t-as="type">
+                                            <option t-att-value="type.id">
+                                                <t t-esc="type.name"/>
+                                            </option>
+                                        </t>
+                                    </option>
+                                </select>
+                            </div>
+
+                            <!-- Service -->
+                            <div class="form-group">
+                                <label class="col-form-label o_fake_editable" for="service_id">
+                                    Service Type :
+                                </label>
+
+                                <select class="form-control o_website_form_input" name="service_id"
+                                        required="1">
+                                    <option>
+                                        <t t-foreach="service_id" t-as="type">
+                                            <option t-att-value="type.id">
+                                                <t t-esc="type.name"/>
+                                            </option>
+                                        </t>
+                                    </option>
+                                </select>
+                            </div>
+                            <!-- Select Car -->
+
+                           <!--  <div class="form-group">
+                                <label for="name">Car Brand:</label>
+                                <input type="text" class="form-control" name="brand"
+                                       id="brand" required="true"/>
+                            </div> -->
+                            <div class="form-group">
+                                <label for="name">Repair Issue :</label>
+                                <input type="text" class="form-control" name="reason_for_repair"
+                                       id="reason_for_repair" required="true"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Reason For Repair In Details :</label>
+                                <input type="text" class="form-control" name="reason_details"
+                                       id="reason_details" required="true"/>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="name">List Of Damage :</label>
+                                <input type="text" class="form-control" name="list_of_damage"
+                                       id="list_of_damage" required="true"/>
+                            </div>
+                            <div style="form-group">
+                                <label for="name">Priority :</label>
+                                <select class="form-control" name="priority">
+                                    <option value="0">Low</option>
+                                    <option value="1">Medium</option>
+                                    <option value="2">High</option>
+                                    <option value="3">Very High</option>
+                                </select>
+                            </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>

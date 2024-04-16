@@ -1,0 +1,1901 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* car_repair_maintenance_axis
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-26 09:20+0000\n"
+"PO-Revision-Date: 2023-05-26 09:20+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_diagnosis_request_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_diagnosis_result_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_checklists_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_estimate_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_label_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_receipt_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.work_order_template
+msgid "Address Line 1"
+msgstr ""
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_diagnosis_request_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_diagnosis_result_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_checklists_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_estimate_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_label_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_receipt_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.work_order_template
+msgid "Address Line 2"
+msgstr ""
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_servicing_membership__amount
+msgid "Amount"
+msgstr "Beløb"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model,name:car_repair_maintenance_axis.model_account_analytic_line
+msgid "Analytic Line"
+msgstr "Analytisk linje"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis__appointment_date
+msgid "Appointment Date"
+msgstr "Udnævnelsesdato"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_project_task__user_id
+msgid "Assigned To"
+msgstr "Tildelt"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_servicing_membership__membership_beginning_date
+msgid "Beginning Date"
+msgstr "Startdato"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car__brand
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis__brand
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_form__brand
+msgid "Brand"
+msgstr "Mærke"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_diagnosis_request_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_diagnosis_result_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_checklists_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_label_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_receipt_view_template
+msgid "Brand:"
+msgstr "Mærke:"
+
+#. module: car_repair_maintenance_axis
+#. odoo-javascript
+#: code:addons/car_repair_maintenance_axis/static/src/xml/car_repair_dashboard.xml:0
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_project__car_id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_project_task__car_id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis__car_id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_form__car_id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_servicing_membership__car_id
+#: model:ir.ui.menu,name:car_repair_maintenance_axis.menu_cars_main
+#, python-format
+msgid "Car"
+msgstr "Bil"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_diagnosis_request_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_diagnosis_result_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_checklists_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_label_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_receipt_view_template
+msgid "Car Details:"
+msgstr "Bil detaljer:"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.actions.report,name:car_repair_maintenance_axis.action_car_diagnosis_request_print
+msgid "Car Diagnosis Request"
+msgstr "Anmodning om bildiagnose"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.actions.report,name:car_repair_maintenance_axis.action_car_diagnosis_result_print
+msgid "Car Diagnosis Result"
+msgstr "Bildiagnoseresultat"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_car_form
+msgid "Car Form"
+msgstr ""
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_car_repair_form
+msgid "Car Information"
+msgstr "Bil Form"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model,name:car_repair_maintenance_axis.model_car
+msgid "Car Management"
+msgstr "Bil Ledelse"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car__name
+msgid "Car Name"
+msgstr "Bilens navn"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car__car_notes
+msgid "Car Notes"
+msgstr "Bil noter"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car__car_num
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis__car_number
+msgid "Car Number"
+msgstr "Bilnummer"
+
+#. module: car_repair_maintenance_axis
+#. odoo-javascript
+#: code:addons/car_repair_maintenance_axis/static/src/js/car_repair_dashboard.js:0
+#: model:ir.actions.act_window,name:car_repair_maintenance_axis.action_car_parts
+#: model:ir.model,name:car_repair_maintenance_axis.model_car_parts
+#: model:ir.ui.menu,name:car_repair_maintenance_axis.menu_car_parts
+#, python-format
+msgid "Car Parts"
+msgstr "Bil dele"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_car_parts_form
+msgid "Car Parts Form"
+msgstr "Formular til bildele"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model,name:car_repair_maintenance_axis.model_car_project
+msgid "Car Project"
+msgstr "Bil projekt"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model,name:car_repair_maintenance_axis.model_car_project_task
+msgid "Car Project Task"
+msgstr "Bilprojektopgave"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model,name:car_repair_maintenance_axis.model_car_project_task_timesheet
+msgid "Car Project Task Timesheet"
+msgstr "Bilprojekt opgave timeseddel"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_estimate__car_repair_id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_project_task__car_repair_id
+#: model:ir.ui.menu,name:car_repair_maintenance_axis.car_repair_main_menu
+#: model:ir.ui.menu,name:car_repair_maintenance_axis.menu_car_repair_main
+msgid "Car Repair"
+msgstr "Bil reparation"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.actions.report,name:car_repair_maintenance_axis.action_car_repair_checklists_print
+msgid "Car Repair Checklists"
+msgstr "Tjeklister til bilreparationer"
+
+#. module: car_repair_maintenance_axis
+#. odoo-javascript
+#: code:addons/car_repair_maintenance_axis/static/src/xml/car_repair_dashboard.xml:0
+#: model:ir.actions.client,name:car_repair_maintenance_axis.car_dashboard_action
+#: model:ir.ui.menu,name:car_repair_maintenance_axis.menu_car_repair_dashboard
+#, python-format
+msgid "Car Repair Dashboard"
+msgstr "Bilreparations instrumentbræt"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.actions.act_window,name:car_repair_maintenance_axis.action_car_repair_diagnosis
+#: model:ir.model,name:car_repair_maintenance_axis.model_car_repair_diagnosis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_work_order__car_repair_diagnosis_id
+#: model:ir.ui.menu,name:car_repair_maintenance_axis.menu_car_repair_diagnosis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_car_repair_diagnosis_form
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_car_repair_diagnosis_tree
+msgid "Car Repair Diagnosis"
+msgstr "Bilreparationsdiagnose"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.actions.report,name:car_repair_maintenance_axis.action_car_repair_estimate_print
+#: model:ir.model,name:car_repair_maintenance_axis.model_car_repair_estimate
+#: model:ir.ui.menu,name:car_repair_maintenance_axis.menu_car_repair_estimate
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_estimate_form_view
+msgid "Car Repair Estimate"
+msgstr "Estimat for bilreparation"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.actions.act_window,name:car_repair_maintenance_axis.action_car_repair_estimate_form
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_estimate_tree_view
+msgid "Car Repair Estimate Form"
+msgstr "Formular til vurdering af bilreparationer"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.actions.act_window,name:car_repair_maintenance_axis.action_car_repair
+#: model:ir.model,name:car_repair_maintenance_axis.model_car_repair_form
+#: model:ir.ui.menu,name:car_repair_maintenance_axis.menu_car_repair
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_car_repair_form
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_car_repair_tree
+msgid "Car Repair Form"
+msgstr "Formular til bilreparation"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.actions.report,name:car_repair_maintenance_axis.action_car_repair_label_print
+msgid "Car Repair Label"
+msgstr "Bilreparationsmærke"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.actions.act_window,name:car_repair_maintenance_axis.action_car_repair_membership
+#: model:ir.ui.menu,name:car_repair_maintenance_axis.menu_car_repair_membership
+msgid "Car Repair Membership"
+msgstr "Bilværkstedsmedlemskab
+
+#. module: car_repair_maintenance_axis
+#: model:ir.actions.report,name:car_repair_maintenance_axis.action_car_repair_receipt_print
+msgid "Car Repair Maintenance"
+msgstr "Vedligeholdelse af bilreparationer"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.actions.act_window,name:car_repair_maintenance_axis.action_car_service
+#: model:ir.model,name:car_repair_maintenance_axis.model_car_service
+#: model:ir.ui.menu,name:car_repair_maintenance_axis.menu_car_service
+msgid "Car Service"
+msgstr "Bilservice"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_car_service_form
+msgid "Car Service Form"
+msgstr "Formular til bilservice"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model,name:car_repair_maintenance_axis.model_car_service_type
+#: model:ir.ui.menu,name:car_repair_maintenance_axis.menu_car_service_type
+msgid "Car Service Type"
+msgstr "Bilservicetype""
+
+#. module: car_repair_maintenance_axis
+#: model:ir.actions.act_window,name:car_repair_maintenance_axis.action_car_service_type
+msgid "Car Service Types"
+msgstr "Bilservicetyper"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_car_service_type_form
+msgid "Car Service Types Form"
+msgstr "Formular til bilservicetyper"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.ui.menu,name:car_repair_maintenance_axis.menu_car_service_main
+msgid "Car Services"
+msgstr "Biltjenester"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model,name:car_repair_maintenance_axis.model_car_servicing_membership
+msgid "Car Servicing Membership"
+msgstr "Bilservicemedlemskab"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_car_servicing_membership_tree
+msgid "Car Servicing Membership Form"
+msgstr "Bilservicemedlemsformular""
+
+#. module: car_repair_maintenance_axis
+#: model:ir.actions.act_window,name:car_repair_maintenance_axis.action_cars
+#: model:ir.ui.menu,name:car_repair_maintenance_axis.menu_cars
+msgid "Cars"
+msgstr "Biler"
+
+#. module: car_repair_maintenance_axis
+#. odoo-javascript
+#: code:addons/car_repair_maintenance_axis/static/src/js/car_repair_dashboard.js:0
+#, python-format
+msgid "Cars Done"
+msgstr "Biler færdige"
+
+#. module: car_repair_maintenance_axis
+#. odoo-javascript
+#: code:addons/car_repair_maintenance_axis/static/src/js/car_repair_dashboard.js:0
+#, python-format
+msgid "Cars In Diagnosis"
+msgstr "Biler under diagnose"
+
+#. module: car_repair_maintenance_axis
+#. odoo-javascript
+#: code:addons/car_repair_maintenance_axis/static/src/js/car_repair_dashboard.js:0
+#, python-format
+msgid "Cars In-Progress"
+msgstr "Biler i gang"
+
+#. module: car_repair_maintenance_axis
+#. odoo-javascript
+#: code:addons/car_repair_maintenance_axis/static/src/js/car_repair_dashboard.js:0
+#, python-format
+msgid "Cars Received"
+msgstr "Biler modtaget"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_request__checklist_ids
+msgid "Check"
+msgstr "Kontrollere"
+
+#. module: car_repair_maintenance_axis
+#. odoo-javascript
+#: code:addons/car_repair_maintenance_axis/static/src/xml/car_repair_dashboard.xml:0
+#: code:addons/car_repair_maintenance_axis/static/src/xml/maintenance_dashboard.xml:0
+#, python-format
+msgid "CheckList"
+msgstr "Tjekliste"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_request__checklist_line_ids
+msgid "CheckList Lines"
+msgstr "TjeklisteLinjer"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist__name
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist_line__name
+msgid "Checklist Name"
+msgstr "Tjeklistenavn"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis__checklist_ids
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_form__checklist_ids
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_car_repair_diagnosis_form
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_car_repair_form
+msgid "Checklists"
+msgstr "Tjeklister"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_checklists_view_template
+msgid "Checklists:"
+msgstr "Tjeklister:"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.actions.act_window,help:car_repair_maintenance_axis.action_car_repair_diagnosis
+msgid "Click here to create a new Car Repair Diagnosis"
+msgstr "Klik her for at oprette en ny bilreparationsdiagnose"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_diagnosis_result_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_checklists_view_template
+msgid "Client"
+msgstr "Klient"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_checklists_view_template
+msgid "Client Details:"
+msgstr "Klient Detaljer:"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car__color
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_form__color
+msgid "Color"
+msgstr "Farve"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model,name:car_repair_maintenance_axis.model_res_company
+msgid "Companies"
+msgstr "Virksomheder"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_diagnosis_request_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_diagnosis_result_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_checklists_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_estimate_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_label_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_receipt_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.work_order_template
+msgid "Company Name"
+msgstr "Virksomhedsnavn"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model,name:car_repair_maintenance_axis.model_res_config_settings
+msgid "Config Settings"
+msgstr "Konfigurer opsætning"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_car_repair_diagnosis_form
+msgid "Confirm"
+msgstr "Bekræfte"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__car_repair_diagnosis__state__confirmed
+msgid "Confirmed"
+msgstr "Bekræftet"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_estimate_template
+msgid "Cost :"
+msgstr "Omkostninger:"
+
+#. module: car_repair_maintenance_axis
+#. odoo-python
+#: code:addons/car_repair_maintenance_axis/models/car_repair_form.py:0
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_car_repair_form
+#, python-format
+msgid "Create Diagnosis"
+msgstr "Opret diagnose"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_car_repair_form
+msgid "Create Estimate"
+msgstr "Opret skøn"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_car_repair_diagnosis_form
+msgid "Create Quotation"
+msgstr "Opret tilbud"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_car_repair_diagnosis_form
+msgid "Create Work Order"
+msgstr "Opret arbejdsordre"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car__create_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_parts__create_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_project__create_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_project_task__create_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_project_task_timesheet__create_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis__create_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis_line__create_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_estimate__create_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_form__create_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_service__create_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_service_type__create_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_servicing_membership__create_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_equipment_part_line__create_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_job_roles__create_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist__create_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist_line__create_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_membership_plan__create_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_service_option__create_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_work_order__create_uid
+msgid "Created by"
+msgstr "Lavet af"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car__create_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_parts__create_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_project__create_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_project_task__create_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_project_task_timesheet__create_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis__create_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis_line__create_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_estimate__create_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_form__create_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_service__create_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_service_type__create_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_servicing_membership__create_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_equipment_part_line__create_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_job_roles__create_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist__create_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist_line__create_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_membership_plan__create_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_service_option__create_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_work_order__create_date
+msgid "Created on"
+msgstr "msgid "Created on"
+
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__car_repair_diagnosis__service_nature__custom_service
+msgid "Custom Service"
+msgstr "Kundeservice"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis__customer
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_form__customer
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_servicing_membership__customer
+msgid "Customer"
+msgstr "Kunde"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_diagnosis_request_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_diagnosis_result_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_label_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_receipt_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.work_order_template
+msgid "Customer Details:"
+msgstr ""
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_car_repair_form
+msgid "Customer Information"
+msgstr "Kundeoplysninger:"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_work_order__customer_name
+msgid "Customer Name"
+msgstr "Kundenavn"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_project_task_timesheet__date
+msgid "Date"
+msgstr "Dato"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_diagnosis_request_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_checklists_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_estimate_template
+msgid "Date :"
+msgstr "Dato :
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis__date_confirmed
+msgid "Date Confirmed"
+msgstr "Dato bekræftet"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis__date_done
+msgid "Date Done"
+msgstr "Dato Udført"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_form__date_received
+msgid "Date Received"
+msgstr "Dato Modtaget"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_work_order__service_date
+msgid "Date of Service"
+msgstr "Dato for tjeneste"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_label_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_receipt_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.work_order_template
+msgid "Date:"
+msgstr "Dato"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_parts__description
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_project_task_timesheet__description
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis_line__name
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_estimate__description
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_service__description
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_service_type__description
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_job_roles__description
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist__desc
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist_line__desc
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_request__desc
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_membership_plan__description
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_service_option__description
+msgid "Description"
+msgstr ""Beskrivelse""
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_checklists_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_estimate_template
+msgid "Description :"
+msgstr "Beskrivelse :"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_request__location_id
+msgid "Destination Location"
+msgstr "Destinationsplacering"
+
+#. module: car_repair_maintenance_axis
+#. odoo-python
+#: code:addons/car_repair_maintenance_axis/models/car_repair_form.py:0
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_car_repair_form
+#, python-format
+msgid "Diagnoses"
+msgstr "Diagnoser"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis_line__diagnosis_id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_form__diagnosis_id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_sale_order__diagnosis_id
+msgid "Diagnosis"
+msgstr "Diagnoser"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_form__diagnosis_count
+msgid "Diagnosis Count"
+msgstr "Diagnoser Tælle""
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis__description
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_car_repair_diagnosis_form
+msgid "Diagnosis Description"
+msgstr "Diagnosebeskrivelse"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_diagnosis_result_template
+msgid "Diagnosis Notes:"
+msgstr "Diagnose noter:"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_car_repair_diagnosis_form
+msgid "Diagnosis Report"
+msgstr "Diagnoserapport"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_diagnosis_request_template
+msgid "Diagnosis Request:"
+msgstr "Anmodning om diagnose:"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis__notes
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_car_repair_diagnosis_form
+msgid "Diagnostic Results"
+msgstr "Diagnostiske resultater"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__car__fuel_type__diesel
+msgid "Diesel"
+msgstr "Diesel"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car__display_name
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_parts__display_name
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_project__display_name
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_project_task__display_name
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_project_task_timesheet__display_name
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis__display_name
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis_line__display_name
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_estimate__display_name
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_form__display_name
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_service__display_name
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_service_type__display_name
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_servicing_membership__display_name
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_equipment_part_line__display_name
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_job_roles__display_name
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist__display_name
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist_line__display_name
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_membership_plan__display_name
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_service_option__display_name
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_work_order__display_name
+msgid "Display Name"
+msgstr "Vist navn"
+
+#. module: car_repair_maintenance_axis
+#. odoo-javascript
+#: code:addons/car_repair_maintenance_axis/static/src/xml/car_repair_dashboard.xml:0
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__car_repair_diagnosis__state__done
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__car_repair_form__state__done
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_car_repair_diagnosis_form
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_car_repair_form
+#, python-format
+msgid "Done"
+msgstr "Færdig"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__car_repair_diagnosis__state__draft
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__car_repair_form__state__draft
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__work_order__state__draft
+msgid "Draft"
+msgstr "Udkast"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_project_task_timesheet__duration
+msgid "Duration"
+msgstr "Varighed"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_service__duration
+msgid "Duration in Minutes"
+msgstr "Varighed i minutter"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__car__fuel_type__electric
+msgid "Electric"
+msgstr "Elektrisk"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis__email
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_form__email
+msgid "Email"
+msgstr "E-mail"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_diagnosis_request_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_diagnosis_result_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_checklists_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_label_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_receipt_view_template
+msgid "Email :"
+msgstr "E-mail"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_res_company__email_validation
+msgid "Email Confirationm"
+msgstr "E-mail bekræftelsem"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_res_config_settings__email_validation
+msgid "Email Confirmation picking"
+msgstr "Udvalg af e-mailbekræftelse"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_res_company__confirmation_template_id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_res_config_settings__confirmation_template_id
+msgid "Email Template confirmation picking"
+msgstr "Valg af bekræftelse af e-mailskabelon"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,help:car_repair_maintenance_axis.field_res_company__confirmation_template_id
+#: model:ir.model.fields,help:car_repair_maintenance_axis.field_res_config_settings__confirmation_template_id
+msgid "Email sent to the customer once the maintenance state is change."
+msgstr "E-mail sendt til kunden, når vedligeholdelsestilstanden er ændret"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_diagnosis_request_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_diagnosis_result_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_checklists_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_estimate_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_label_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_receipt_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.work_order_template
+msgid "Email: info@company.com"
+msgstr "E-mail: info@company.com"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_work_order__end_date
+msgid "End Date"
+msgstr "Slutdato:"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.work_order_template
+msgid "End Date :"
+msgstr "Slutdato:"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_request__equipment_ids
+msgid "Eqipment"
+msgstr "Udstyr"
+
+#. module: car_repair_maintenance_axis
+#. odoo-javascript
+#: code:addons/car_repair_maintenance_axis/static/src/xml/maintenance_dashboard.xml:0
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_equipment_part_line__maintenance_equipment_id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist__equipment_id
+#, python-format
+msgid "Equipment"
+msgstr "Udstyr"
+
+#. module: car_repair_maintenance_axis
+#. odoo-javascript
+#: code:addons/car_repair_maintenance_axis/static/src/xml/car_repair_dashboard.xml:0
+#: code:addons/car_repair_maintenance_axis/static/src/xml/maintenance_dashboard.xml:0
+#, python-format
+msgid "Equipment Purchase Requisition"
+msgstr "Rekvisition til indkøb af udstyr"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_request__partner_req_vendor_id
+msgid "Equipment Purchase Requisition Vendor"
+msgstr "Leverandør af indkøb af udstyr"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_car_repair_form
+msgid "Estimate"
+msgstr "Skøn"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_form__estimate_count
+msgid "Estimate Count"
+msgstr "Skøntæller"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_estimate__name
+msgid "Estimate Number"
+msgstr "Estimeret antal"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_estimate_template
+msgid "Estimate Number :"		
+msgstr "Estimeret antal:"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis__estimated_hours
+msgid "Estimated Hours"
+msgstr "Anslåede timer"
+
+#. module: car_repair_maintenance_axis
+#. odoo-python
+#: code:addons/car_repair_maintenance_axis/models/car_repair_form.py:0
+#, python-format
+msgid "Estimates"
+msgstr "Estimat"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_servicing_membership__membership_expiration_date
+msgid "Expiration Date"
+msgstr "Udløbsdato"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_work_order_form
+msgid "Finish Work"
+msgstr "Afslut arbejdet"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__work_order__state__finished
+msgid "Finished"
+msgstr "Færdig"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__car_repair_diagnosis__guarantee_type__free
+msgid "Free"
+msgstr "Gratis"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car__fuel_type
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis__fuel_type
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_form__fuel_type
+msgid "Fuel Type"
+msgstr "Brændstoftype"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__car_repair_diagnosis__service_nature__full_service
+msgid "Full Service"
+msgstr "Fuld service"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_car_repair_diagnosis_form
+msgid "General Information"
+msgstr "Generel information"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis__guarantee_type
+msgid "Guarantee Type"
+msgstr "Garantitype"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__car_servicing_membership__validity_period__half_yearly
+msgid "Half Yearly"
+msgstr "Halvårligt"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__car_repair_form__priority__2
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__maintenance_request__priority__3
+msgid "High"
+msgstr "Høj"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.work_order_template
+msgid "Hours Details:"
+msgstr "Timer detaljer:"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_work_order__hours_worked
+msgid "Hours Worked"
+msgstr "arbejdstimer"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.work_order_template
+msgid "Hours Worked :"
+msgstr "arbejdstimer"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__car__fuel_type__hybrid
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__car_repair_diagnosis__guarantee_type__hybrid
+msgid "Hybrid"
+msgstr "Hybrid"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car__id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_parts__id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_project__id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_project_task__id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_project_task_timesheet__id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis__id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis_line__id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_estimate__id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_form__id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_service__id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_service_type__id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_servicing_membership__id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_equipment_part_line__id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_job_roles__id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist__id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist_line__id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_membership_plan__id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_service_option__id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_work_order__id
+msgid "ID"
+msgstr "ID"
+
+#. module: car_repair_maintenance_axis
+#. odoo-javascript
+#: code:addons/car_repair_maintenance_axis/static/src/xml/car_repair_dashboard.xml:0
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__car_repair_form__state__diagnosis
+#, python-format
+msgid "In Diagnosis"
+msgstr "I Diagnose"
+
+#. module: car_repair_maintenance_axis
+#. odoo-javascript
+#: code:addons/car_repair_maintenance_axis/static/src/xml/maintenance_dashboard.xml:0
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__maintenance_request__state__in_progress
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__work_order__state__in_progress
+#, python-format
+msgid "In Progress"
+msgstr "I gang"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_request__is_project_task
+msgid "Is Job Order ?"
+msgstr "Er joborden?"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_request__is_material_requisition
+msgid "Is Material Requisition?"
+msgstr "Er materialerekvisition?"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_purchase_requisition__is_requisition
+msgid "Is Order From Maintenance Requisition?"
+msgstr "Er ordre fra vedligeholdelsesrekvisition?"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_project_task__is_order
+msgid "Is Order From Requisition?"
+msgstr "msgid "Is Order From Requisition?"
+
+
+#. module: car_repair_maintenance_axis
+#. odoo-javascript
+#: code:addons/car_repair_maintenance_axis/static/src/xml/car_repair_dashboard.xml:0
+#, python-format
+msgid "Job"
+msgstr "Job"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_request__project_task_id
+msgid "Job Order"
+msgstr "Jobbestilling"
+
+#. module: car_repair_maintenance_axis
+#. odoo-javascript
+#: code:addons/car_repair_maintenance_axis/static/src/js/car_repair_dashboard.js:0
+#: model:ir.actions.act_window,name:car_repair_maintenance_axis.action_job_roles
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_res_users__job_roles_ids
+#: model:ir.ui.menu,name:car_repair_maintenance_axis.menu_job_roles
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_job_roles_form
+#, python-format
+msgid "Job Roles"
+msgstr "Job roller"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car____last_update
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_parts____last_update
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_project____last_update
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_project_task____last_update
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_project_task_timesheet____last_update
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis____last_update
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis_line____last_update
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_estimate____last_update
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_form____last_update
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_service____last_update
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_service_type____last_update
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_servicing_membership____last_update
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_equipment_part_line____last_update
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_job_roles____last_update
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist____last_update
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist_line____last_update
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_membership_plan____last_update
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_service_option____last_update
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_work_order____last_update
+msgid "Last Modified on"
+msgstr "Sidst ændret den"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car__write_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_parts__write_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_project__write_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_project_task__write_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_project_task_timesheet__write_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis__write_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis_line__write_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_estimate__write_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_form__write_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_service__write_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_service_type__write_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_servicing_membership__write_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_equipment_part_line__write_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_job_roles__write_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist__write_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist_line__write_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_membership_plan__write_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_service_option__write_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_work_order__write_uid
+msgid "Last Updated by"
+msgstr "Sidst opdateret af"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car__write_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_parts__write_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_project__write_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_project_task__write_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_project_task_timesheet__write_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis__write_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis_line__write_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_estimate__write_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_form__write_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_service__write_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_service_type__write_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_servicing_membership__write_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_equipment_part_line__write_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_job_roles__write_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist__write_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist_line__write_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_membership_plan__write_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_service_option__write_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_work_order__write_date
+msgid "Last Updated on"
+msgstr "Sidst opdateret den"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_diagnosis_request_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_diagnosis_result_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_checklists_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_estimate_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_label_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_receipt_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.work_order_template
+msgid "Logo"
+msgstr "Logo"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__car_repair_form__priority__0
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__maintenance_request__priority__1
+msgid "Low"
+msgstr "Lav"
+
+#. module: car_repair_maintenance_axis
+#. odoo-javascript
+#: code:addons/car_repair_maintenance_axis/static/src/xml/maintenance_dashboard.xml:0
+#: code:addons/car_repair_maintenance_axis/static/src/xml/maintenance_dashboard.xml:0
+#: code:addons/car_repair_maintenance_axis/static/src/xml/maintenance_dashboard.xml:0
+#, python-format
+msgid "Maintenance"
+msgstr "Vedligeholdelse"
+
+#. module: car_repair_maintenance_axis
+#. odoo-javascript
+#: code:addons/car_repair_maintenance_axis/static/src/js/maintenance_dashboard.js:0
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_equipment__check_ids
+#, python-format
+msgid "Maintenance CheckList"
+msgstr "Vedligeholdelseskontrolliste"
+
+#. module: car_repair_maintenance_axis
+#. odoo-javascript
+#: code:addons/car_repair_maintenance_axis/static/src/xml/maintenance_dashboard.xml:0
+#, python-format
+msgid "Maintenance Dashboard"
+msgstr "Vedligeholdelse Dashboard"
+
+#. module: car_repair_maintenance_axis
+#. odoo-javascript
+#: code:addons/car_repair_maintenance_axis/static/src/js/maintenance_dashboard.js:0
+#: model:ir.model,name:car_repair_maintenance_axis.model_maintenance_equipment
+#, python-format
+msgid "Maintenance Equipment"
+msgstr "Vedligeholdelsesudstyr"
+
+#. module: car_repair_maintenance_axis
+#. odoo-javascript
+#: code:addons/car_repair_maintenance_axis/static/src/js/maintenance_dashboard.js:0
+#: code:addons/car_repair_maintenance_axis/static/src/js/maintenance_dashboard.js:0
+#: code:addons/car_repair_maintenance_axis/static/src/js/maintenance_dashboard.js:0
+#: code:addons/car_repair_maintenance_axis/static/src/js/maintenance_dashboard.js:0
+#: model:ir.model,name:car_repair_maintenance_axis.model_maintenance_request
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_equipment_part_line__maintenance_id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist__maintenance_id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist_line__maintenance_id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_project_task__maintenance_id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_purchase_requisition__maintenance_id
+#, python-format
+msgid "Maintenance Request"
+msgstr "Anmodning om vedligeholdelse"
+
+#. module: car_repair_maintenance_axis
+#. odoo-javascript
+#: code:addons/car_repair_maintenance_axis/static/src/xml/car_repair_dashboard.xml:0
+#: code:addons/car_repair_maintenance_axis/static/src/xml/maintenance_dashboard.xml:0
+#, python-format
+msgid "Maintenance Requests"
+msgstr "Vedligeholdelsesanmodninger"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model,name:car_repair_maintenance_axis.model_maintenance_stage
+msgid "Maintenance Stage"
+msgstr "Vedligeholdelse stadie"
+
+#. module: car_repair_maintenance_axis
+#. odoo-javascript
+#: code:addons/car_repair_maintenance_axis/static/src/js/maintenance_dashboard.js:0
+#, python-format
+msgid "Maintenance Team"
+msgstr ""Vedligeholdelsesteam""
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car__manufacturing_year
+msgid "Manufacturing Year"
+msgstr "Fremstillingsår"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__car_repair_form__priority__1
+msgid "Medium"
+msgstr "Medium"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_form__membership_id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_servicing_membership__name
+msgid "Membership Number"
+msgstr "Medlemsnummer"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model,name:car_repair_maintenance_axis.model_membership_plan
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_servicing_membership__membership_plan
+#: model:ir.ui.menu,name:car_repair_maintenance_axis.menu_membership_plan
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_car_servicing_membership_form
+msgid "Membership Plan"
+msgstr "Medlemskabsplan"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.actions.act_window,name:car_repair_maintenance_axis.action_membership_plan
+#: model:ir.ui.menu,name:car_repair_maintenance_axis.menu_car_repair_membership_main
+msgid "Membership Plans"
+msgstr "Medlemskabsplaner"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_diagnosis_request_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_diagnosis_result_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_checklists_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_label_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_receipt_view_template
+msgid "Mobile :"
+msgstr "Mobil"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis__mobile
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_form__mobile
+msgid "Mobile Number"
+msgstr "Mobilnummer"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car__model
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis__model
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_form__model
+msgid "Model"
+msgstr "Model"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_diagnosis_request_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_diagnosis_result_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_checklists_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_label_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_receipt_view_template
+msgid "Model:"
+msgstr "Model:"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__car_servicing_membership__validity_period__monthly
+msgid "Monthly"
+msgstr "Månedlige"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_job_roles__name
+msgid "Name"
+msgstr "Navn"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_diagnosis_request_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_diagnosis_result_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_checklists_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_estimate_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_label_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_receipt_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.work_order_template
+msgid "Name :"
+msgstr "Navn:"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.work_order_template
+msgid "Name:"
+msgstr "Navn:"
+
+#. module: car_repair_maintenance_axis
+#. odoo-python
+#: code:addons/car_repair_maintenance_axis/models/car_repair_form.py:0
+#: code:addons/car_repair_maintenance_axis/models/car_repair_form.py:0
+#: code:addons/car_repair_maintenance_axis/models/car_repair_form.py:0
+#: code:addons/car_repair_maintenance_axis/models/car_repair_form.py:0
+#, python-format
+msgid "New"
+msgstr "Ny"
+
+#. module: car_repair_maintenance_axis
+#. odoo-javascript
+#: code:addons/car_repair_maintenance_axis/static/src/xml/maintenance_dashboard.xml:0
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__maintenance_request__state__new
+#, python-format
+msgid "New Request"
+msgstr "Ny anmodning"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__car_repair_diagnosis__guarantee__no
+msgid "No"
+msgstr "Ingen"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__maintenance_request__priority__2
+msgid "Normal"
+msgstr "Normal"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_servicing_membership__notes
+msgid "Notes"
+msgstr "Bemærkninger:"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_diagnosis_request_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_checklists_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_label_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_receipt_view_template
+msgid "Notes:"
+msgstr "Bemærkninger:"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_checklists_view_template
+msgid "Order No :"
+msgstr "Ordre nummer :"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car__owner_id
+msgid "Owner"
+msgstr "Ejer"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__car_repair_diagnosis__guarantee_type__paid
+msgid "Paid"
+msgstr "Betalt"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__car_repair_diagnosis__service_nature__partial_service
+msgid "Partial Service"
+msgstr "Delvis service"
+
+#. module: car_repair_maintenance_axis
+#. odoo-javascript
+#: code:addons/car_repair_maintenance_axis/static/src/xml/car_repair_dashboard.xml:0
+#, python-format
+msgid "Parts"
+msgstr "Dele"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_estimate__cost
+msgid "Parts Cost"
+msgstr "Dele omkostninger"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_parts__part_name
+msgid "Parts Name"
+msgstr "Navn på dele"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_estimate__parts_required
+msgid "Parts Required"
+msgstr "Dele påkrævet"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_estimate_template
+msgid "Parts Required:"
+msgstr "Nødvendige dele:"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__car__fuel_type__petrol
+msgid "Petrol"
+msgstr "Benzin"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_diagnosis_request_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_diagnosis_result_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_checklists_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_estimate_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_label_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_receipt_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.work_order_template
+msgid "Phone: +1 555-1234"
+msgstr "Telefon: +1 555-1234"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_membership_plan__name
+msgid "Plan Name"
+msgstr "Planens navn"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_project_task__planned_hours
+msgid "Planned Hours"
+msgstr "Planlagte timer"
+
+#. module: car_repair_maintenance_axis
+#. odoo-python
+#: code:addons/car_repair_maintenance_axis/models/maintenance_request.py:0
+#, python-format
+msgid "Please Select Destination Location."
+msgstr "Vælg venligst destinationsplacering."
+
+#. module: car_repair_maintenance_axis
+#. odoo-python
+#: code:addons/car_repair_maintenance_axis/models/maintenance_request.py:0
+#, python-format
+msgid "Please Select Equipment Material Line."
+msgstr "Vælg venligst udstyrsmaterialelinje."
+
+#. module: car_repair_maintenance_axis
+#. odoo-python
+#: code:addons/car_repair_maintenance_axis/models/maintenance_request.py:0
+#, python-format
+msgid "Please Select Equipment Purchase Requisition Vendor."
+msgstr "Vælg venligst dato for køb af udstyr."
+
+#. module: car_repair_maintenance_axis
+#. odoo-python
+#: code:addons/car_repair_maintenance_axis/models/maintenance_request.py:0
+#, python-format
+msgid "Please Select Scheduled Date."
+msgstr "Vælg venligst planlagt dato."
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_service__price
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_membership_plan__price
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_service_option__price
+msgid "Price"
+msgstr "Pris"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,help:car_repair_maintenance_axis.field_car_repair_diagnosis_line__unit_price
+msgid "Price at which the product is sold to customers."
+msgstr Pris, som produktet sælges til kunderne.
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_request__priority
+msgid "Priority"
+msgstr "Prioritet"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_parts__product_id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis_line__product_id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_request__product_id
+msgid "Product"
+msgstr "Produkt"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis_line__product_code
+msgid "Product Code"
+msgstr "Produktkode"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_parts__product_variant_id
+msgid "Product Variant"
+msgstr "Produktvariant"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_project_task__project_id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_form__project_id
+msgid "Project"
+msgstr "Projekt"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_project__name
+msgid "Project Name"
+msgstr "Projekt navn"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model,name:car_repair_maintenance_axis.model_purchase_requisition
+msgid "Purchase Requisition"
+msgstr "Indkøbs rekvisition"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis_line__quantity
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_equipment_part_line__qty
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_request__qty
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_stock_picking__product_uom_qty
+msgid "Quantity"
+msgstr "Antal"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_estimate_template
+msgid "Quantity :"
+msgstr "Antal"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__car_servicing_membership__validity_period__quarterly
+msgid "Quarterly"
+msgstr "Kvartalsvis"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis__quotation_count
+msgid "Quotation Count"
+msgstr "Optælling af tilbud"
+
+#. module: car_repair_maintenance_axis
+#. odoo-python
+#: code:addons/car_repair_maintenance_axis/models/car_repair_form.py:0
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_car_repair_diagnosis_form
+#, python-format
+msgid "Quotations"
+msgstr "Citater"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_checklists_view_template
+msgid "Receipt Of Order :"
+msgstr "Modtagelse af ordre:"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_label_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_receipt_view_template
+msgid "Receipt of Order:"
+msgstr "Modtagelse af ordre:"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_car_repair_form
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_work_order_form
+msgid "Receive"
+msgstr "Modtage"
+
+#. module: car_repair_maintenance_axis
+#. odoo-javascript
+#: code:addons/car_repair_maintenance_axis/static/src/xml/car_repair_dashboard.xml:0
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__car_repair_form__state__received
+#, python-format
+msgid "Received"
+msgstr "Modtaget"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis__name
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_form__name
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_work_order__name
+msgid "Reference"
+msgstr "Reference"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_form__repair_date
+msgid "Repair Date"
+msgstr "Reparationsdato"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_diagnosis_result_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_checklists_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_label_view_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_receipt_view_template
+msgid "Repair Date:"
+msgstr "Reparationsdato:"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_estimate_template
+msgid "Repair Details:"
+msgstr "Reparationsdetaljer:"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_estimate_template
+msgid "Repair Estimate:"
+msgstr "Reparationsvurdering:"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis__diagnosis_line_ids
+msgid "Repair Lines"
+msgstr "Reparationslinjer"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_form__repair_notes
+msgid "Repair Notes"
+msgstr "Reparationsnoter"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis__repair_order_count
+msgid "Repair Order Count"
+msgstr "Antal reparationsordrer"
+
+#. module: car_repair_maintenance_axis
+#. odoo-python
+#: code:addons/car_repair_maintenance_axis/models/car_repair_form.py:0
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_car_repair_diagnosis_form
+#, python-format
+msgid "Repair Orders"
+msgstr "Reparationsordrer"
+
+#. module: car_repair_maintenance_axis
+#. odoo-javascript
+#: code:addons/car_repair_maintenance_axis/static/src/xml/maintenance_dashboard.xml:0
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__maintenance_request__state__repair
+#, python-format
+msgid "Repaired"
+msgstr "Repareret"
+
+#. module: car_repair_maintenance_axis
+#. odoo-javascript
+#: code:addons/car_repair_maintenance_axis/static/src/xml/car_repair_dashboard.xml:0
+#, python-format
+msgid "Roles"
+msgstr "Roller"
+
+#. module: car_repair_maintenance_axis
+#. odoo-python
+#: code:addons/car_repair_maintenance_axis/models/car_repair_form.py:0
+#: code:addons/car_repair_maintenance_axis/models/car_repair_form.py:0
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_form__sale_order_id
+#, python-format
+msgid "Sale Order"
+msgstr "Salgsordre"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model,name:car_repair_maintenance_axis.model_sale_order
+msgid "Sales Order"
+msgstr "Salgsordre"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.work_order_template
+msgid "Schedule Details:"
+msgstr "Tidsplan detaljer:"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_work_order__scheduled_date_planned
+msgid "Scheduled Date Planned"
+msgstr "Planlagt dato Planlagt"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.work_order_template
+msgid "Scheduled Date Planned :"
+msgstr "Planlagt dato planlagt:"
+
+#. module: car_repair_maintenance_axis
+#. odoo-javascript
+#: code:addons/car_repair_maintenance_axis/static/src/xml/maintenance_dashboard.xml:0
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__maintenance_request__state__scrap
+#, python-format
+msgid "Scrap"
+msgstr "Skrot"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_res_users_simple_form
+msgid "Select User"
+msgstr "Vælg Bruger"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_project_task__sequence_num
+msgid "Sequence"
+msgstr "Sekvens"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_work_order__service_details
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_car_repair_diagnosis_form
+msgid "Service Details"
+msgstr "Servicedetaljer"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.work_order_template
+msgid "Service Details:"
+msgstr "Servicedetaljer:"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_service__name
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_service_option__name
+msgid "Service Name"
+msgstr "Tjenestenavn"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis__service_nature
+msgid "Service Nature"
+msgstr "Service Natur"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model,name:car_repair_maintenance_axis.model_service_option
+msgid "Service Option"
+msgstr "Service Mulighed"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.actions.act_window,name:car_repair_maintenance_axis.action_service_option
+#: model:ir.ui.menu,name:car_repair_maintenance_axis.menu_service_option
+msgid "Service Options"
+msgstr "Servicemuligheder"
+
+#. module: car_repair_maintenance_axis
+#. odoo-javascript
+#: code:addons/car_repair_maintenance_axis/static/src/xml/car_repair_dashboard.xml:0
+#, python-format
+msgid "Service Repair"
+msgstr "Service Reparation"
+
+#. module: car_repair_maintenance_axis
+#. odoo-javascript
+#: code:addons/car_repair_maintenance_axis/static/src/js/car_repair_dashboard.js:0
+#: model:ir.ui.menu,name:car_repair_maintenance_axis.menu_maintenance_checklist
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.configure_checklist_form
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.configure_checklist_tree
+#, python-format
+msgid "Service Repair CheckList"
+msgstr "Tjekliste for servicereparationer"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.actions.act_window,name:car_repair_maintenance_axis.config_checklist_action
+msgid "Service Repair Checklists"
+msgstr "Tjekliste for servicereparationer"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_service__service_type_id
+msgid "Service Type"
+msgstr "Servicetype"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_servicing_membership__services
+msgid "Services"
+msgstr "Tjenester"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_membership_plan__services
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_membership_plan_form
+msgid "Services Included"
+msgstr "Services inkluderet"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis__service_charges
+msgid "Servicing Charges"
+msgstr "Serviceomkostninger"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_diagnosis_result_template
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_checklists_view_template
+msgid "Signature:"
+msgstr "Underskrift:"
+
+#. module: car_repair_maintenance_axis
+#. odoo-javascript
+#: code:addons/car_repair_maintenance_axis/static/src/xml/car_repair_dashboard.xml:0
+#: code:addons/car_repair_maintenance_axis/static/src/xml/car_repair_dashboard.xml:0
+#: code:addons/car_repair_maintenance_axis/static/src/xml/car_repair_dashboard.xml:0
+#: code:addons/car_repair_maintenance_axis/static/src/xml/car_repair_dashboard.xml:0
+#: code:addons/car_repair_maintenance_axis/static/src/xml/maintenance_dashboard.xml:0
+#: code:addons/car_repair_maintenance_axis/static/src/xml/maintenance_dashboard.xml:0
+#: code:addons/car_repair_maintenance_axis/static/src/xml/maintenance_dashboard.xml:0
+#: code:addons/car_repair_maintenance_axis/static/src/xml/maintenance_dashboard.xml:0
+#, python-format
+msgid "Stage"
+msgstr "Scene"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis__state
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_form__state
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_request__state
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_stage__status
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_work_order__state
+msgid "Status"
+msgstr "Status"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis__subject
+msgid "Subject"
+msgstr "Emne"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis_line__subtotal
+msgid "Subtotal"
+msgstr "Subtotal"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model,name:car_repair_maintenance_axis.model_project_task
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_account_analytic_line__car_repair_timesheet_id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_project_task_timesheet__task_id
+msgid "Task"
+msgstr "Opgave"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_project_task__name
+msgid "Task Name"
+msgstr "Opgavenavn"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_project__task_ids
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_form__task_ids
+msgid "Tasks"
+msgstr "Opgaver"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_car_repair_form
+msgid "Tasks and Timesheet"
+msgstr "Opgaver og timeseddel"
+
+#. module: car_repair_maintenance_axis
+#. odoo-javascript
+#: code:addons/car_repair_maintenance_axis/static/src/xml/maintenance_dashboard.xml:0
+#, python-format
+msgid "Team"
+msgstr "Hold"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis__user_id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_form__user_id
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_diagnosis_result_template
+msgid "Technician"
+msgstr "Tekniker"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_form__priority
+msgid "Ticket Priority"
+msgstr "Billetprioritet"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_estimate_template
+msgid "Time In MinTime (in hours) :s"
+msgstr "Tid I MinTid (i timer) :s"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_estimate__time
+msgid "Time In Mins."
+msgstr "Tid i minutter"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_form__timesheet_ids
+msgid "Timesheet"
+msgstr "Timeseddel"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_project_task__timesheet_ids
+msgid "Timesheets"
+msgstr "Timesedler"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_estimate__total_cost
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.car_repair_estimate_form_view
+msgid "Total"
+msgstr "Total"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_work_order__num_of_hours
+msgid "Total No. of Hours"
+msgstr "Samlet antal timer"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.work_order_template
+msgid "Total No. of Hours :"
+msgstr "Samlet antal timer:"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model,name:car_repair_maintenance_axis.model_stock_picking
+msgid "Transfer"
+msgstr "Overfør"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_service_type__name
+msgid "Type Name"
+msgstr "Skriv navn"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_equipment_part_line__uom_id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_request__uom_id
+msgid "UOM"
+msgstr "UOM"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis__guarantee
+msgid "Under Guarantee"
+msgstr "Under garanti"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis_line__unit_price
+msgid "Unit Price"
+msgstr "Pris per stk"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model,name:car_repair_maintenance_axis.model_res_users
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_project_task_timesheet__user_id
+msgid "User"
+msgstr "Bruger"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_servicing_membership__validity_period
+msgid "Validity Period"
+msgstr "Gyldighedsperiode"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__car_repair_form__priority__3
+msgid "Very High"
+msgstr "Meget høj"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__maintenance_request__priority__0
+msgid "Very Low"
+msgstr "Meget lav"
+
+#. module: car_repair_maintenance_axis
+#. odoo-javascript
+#: code:addons/car_repair_maintenance_axis/static/src/xml/car_repair_dashboard.xml:0
+#, python-format
+msgid "Work In Progress"
+msgstr "Arbejde der er i gang"
+
+#. module: car_repair_maintenance_axis
+#. odoo-python
+#: code:addons/car_repair_maintenance_axis/models/car_repair_form.py:0
+#: model:ir.model,name:car_repair_maintenance_axis.model_work_order
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis__work_order_id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_stock_picking__work_order_id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_work_order__work_order_id
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_work_order_form
+#, python-format
+msgid "Work Order"
+msgstr "Arbejdsordre"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.work_order_template
+msgid "Work Order:"
+msgstr "Arbejdsordre:"
+
+#. module: car_repair_maintenance_axis
+#. odoo-python
+#: code:addons/car_repair_maintenance_axis/models/car_repair_form.py:0
+#: model:ir.actions.act_window,name:car_repair_maintenance_axis.action_work_order_tree
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_car_repair_diagnosis__work_order_count
+#: model:ir.ui.menu,name:car_repair_maintenance_axis.menu_work_order
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_car_repair_diagnosis_form
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_work_order_tree
+#, python-format
+msgid "Work Orders"
+msgstr "Arbejdsordrer"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__car_repair_form__state__progress
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_car_repair_form
+msgid "Work in Progress"
+msgstr "Arbejde der er i gang"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.actions.report,name:car_repair_maintenance_axis.action_work_order_print
+msgid "Work order"
+msgstr "Arbejdsordre"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__car_servicing_membership__validity_period__yearly
+msgid "Yearly"
+msgstr "Årligt"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__car_repair_diagnosis__guarantee__yes
+msgid "Yes"
+msgstr "Ja"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model,name:car_repair_maintenance_axis.model_car_repair_diagnosis_line
+msgid "car.repair.diagnosis.line"
+msgstr "bil.reparations.diagnoselinje"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model,name:car_repair_maintenance_axis.model_equipment_part_line
+msgid "equipment.part.line"
+msgstr "udstyr.del.linje"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model,name:car_repair_maintenance_axis.model_job_roles
+msgid "job.roles"
+msgstr "job.roller"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_equipment__line_ids
+msgid "line"
+msgstr "linje"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model,name:car_repair_maintenance_axis.model_maintenance_checklist
+msgid "maintenance.checklist"
+msgstr "vedligeholdelse.tjekliste"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model,name:car_repair_maintenance_axis.model_maintenance_checklist_line
+msgid "maintenance.checklist.line"
+msgstr "vedligeholdelse.tjekliste.linje"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_equipment_part_line__product_id
+msgid "product"
+msgstr "produkt"

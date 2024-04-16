@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="car_dashboard_action" model="ir.actions.client">
+        <field name="name">Car Repair Dashboard</field>
+        <field name="tag">car_repair_dashboard</field>
+    </record>
+
+    <menuitem id="menu_car_repair_dashboard"
+              name="Car Repair Dashboard"
+              parent="car_repair_main_menu"
+              action="car_dashboard_action"
+              sequence="1"/>
+
+</odoo>

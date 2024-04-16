@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="assets_backend_dashboard" name="Dashboard Inherit" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <script type="text/javascript"
+              src="/car_repair_maintenance_axis/static/src/js/maintenance_dashboard.js"/>
+            <script type="text/javascript"
+              src="/car_repair_maintenance_axis/static/src/js/car_repair_dashboard.js"/>
+            <script type="text/javascript"
+              src="/car_repair_maintenance_axis/static/src/js/jquery.dataTables.min.js"/>
+               <script type="text/javascript" src="/car_repair_maintenance_axis/static/src/js/datatables.min.js"/>
+                <script type="text/javascript" src="/car_repair_maintenance_axis/static/src/js/dataTables.buttons.min.js"/>
+                <script type="text/javascript" src="/car_repair_maintenance_axis/static/src/js/Chart.js"/>
+                <link rel="stylesheet" href="/car_repair_maintenance_axis/static/src/css/nv.d3.css"/>
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+                <link rel="stylesheet" type="text/css" href="car_repair_maintenance_axis/static/src/scss/new_css.css"/>
+        </xpath>
+    </template>
+</odoo>

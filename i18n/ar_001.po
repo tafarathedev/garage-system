@@ -1,0 +1,570 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* car_repair_maintenance_axis
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-02-20 06:13+0000\n"
+"PO-Revision-Date: 2022-02-20 06:13+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: car_repair_maintenance_axis
+#: model:mail.template,body_html:car_repair_maintenance_axis.maintenance_repaire_mail
+msgid ""
+"\n"
+"          \n"
+"              Dear ${object.employee_id.name},\n"
+"              <br/><br/>\n"
+"              your maintenance has been Repaired\n"
+"              \n"
+"        "
+msgstr "\ن           \ن عزيزي $ {object.employee_id.name} ، \ n 
+<br/> <br/> \ n تم إصلاح الصيانة الخاصة بك \ n               \ن"
+
+#. module: car_repair_maintenance_axis
+#: model:mail.template,body_html:car_repair_maintenance_axis.maintenance_scrap_mail
+msgid ""
+"\n"
+"          \n"
+"              Dear ${object.employee_id.name},\n"
+"              <br/><br/>\n"
+"              your maintenance has been Scrap\n"
+"              \n"
+"        "
+msgstr "\ن  عزيزي $ {object.employee_id.name} ، \ n <br/> <br/> \ n 
+لقد كانت صيانتك خردة \ n"
+
+#. module: car_repair_maintenance_axis
+#: model:mail.template,body_html:car_repair_maintenance_axis.maintenance_inprogress_mail
+msgid ""
+"\n"
+"          \n"
+"              Dear ${object.employee_id.name},\n"
+"              <br/><br/>\n"
+"              your maintenance has been in progress \n"
+"              \n"
+"        "
+msgstr "\ن  عزيزي $ {object.employee_id.name} ، \ n <br/> <br/> \ n
+الصيانة الخاصة بك جارية \ n               \ن"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.res_config_settings_view_form
+msgid ""
+"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
+"specific.\" groups=\"base.group_multi_company\"/>"
+msgstr ""
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_request__checklist_ids
+msgid "Check"
+msgstr "يفحص"
+
+#. module: car_repair_maintenance_axis
+#. openerp-web
+#: code:addons/car_repair_maintenance_axis/static/src/xml/maintenance_dashboard.xml:0
+#, python-format
+msgid "CheckList"
+msgstr "قائمة تدقيق"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_request__checklist_line_ids
+msgid "CheckList Lines"
+msgstr "خطوط قائمة التحقق"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist__name
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist_line__name
+msgid "Checklist Name"
+msgstr "اسم قائمة التحقق"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model,name:car_repair_maintenance_axis.model_res_company
+msgid "Companies"
+msgstr "الشركات"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model,name:car_repair_maintenance_axis.model_res_config_settings
+msgid "Config Settings"
+msgstr "ضبط الإعدادات"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_hr_equipment_request_stock
+msgid "Create Maintenance job Order"
+msgstr "إنشاء أمر مهمة صيانة"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_hr_equipment_request_stock
+msgid "Create Material Purchase Requisition"
+msgstr "إنشاء طلب شراء المواد"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_equipment_part_line__create_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist__create_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist_line__create_uid
+msgid "Created by"
+msgstr "انشأ من قبل"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_equipment_part_line__create_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist__create_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist_line__create_date
+msgid "Created on"
+msgstr "تم إنشاؤها على"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist__desc
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist_line__desc
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_request__desc
+msgid "Description"
+msgstr "وصف"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_request__location_id
+msgid "Destination Location"
+msgstr "موقع وجهة"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_equipment_part_line__display_name
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist__display_name
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist_line__display_name
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_equipment__display_name
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_request__display_name
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_stage__display_name
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_project_task__display_name
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_purchase_requisition__display_name
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_res_company__display_name
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_res_config_settings__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_res_company__email_validation
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.res_config_settings_view_form
+msgid "Email Confirmation"
+msgstr "تأكيد البريد الإلكتروني"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_res_config_settings__email_validation
+msgid "Email Confirmation picking"
+msgstr "انتقاء تأكيد البريد الإلكتروني"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.res_config_settings_view_form
+msgid "Email Template"
+msgstr "نموذج البريد الإلكتروني"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_res_company__confirmation_template_id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_res_config_settings__confirmation_template_id
+msgid "Email Template confirmation picking"
+msgstr "اختيار قالب البريد الإلكتروني"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,help:car_repair_maintenance_axis.field_res_company__confirmation_template_id
+#: model:ir.model.fields,help:car_repair_maintenance_axis.field_res_config_settings__confirmation_template_id
+msgid "Email sent to the customer once the maintenance state is change."
+msgstr "يتم إرسال البريد الإلكتروني إلى العميل بمجرد تغيير حالة الصيانة."
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_request__equipment_ids
+msgid "Eqipment"
+msgstr "ادوات"
+
+#. module: car_repair_maintenance_axis
+#. openerp-web
+#: code:addons/car_repair_maintenance_axis/static/src/xml/maintenance_dashboard.xml:0
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_equipment_part_line__maintenance_equipment_id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist__equipment_id
+#, python-format
+msgid "Equipment"
+msgstr "ادوات"
+
+#. module: car_repair_maintenance_axis
+#. openerp-web
+#: code:addons/car_repair_maintenance_axis/static/src/xml/maintenance_dashboard.xml:0
+#: model:ir.actions.act_window,name:car_repair_maintenance_axis.action_purchase_requisition
+#: model:ir.ui.menu,name:car_repair_maintenance_axis.main_purchase_requisition_menu
+#: model:ir.ui.menu,name:car_repair_maintenance_axis.purchase_requisition_menu
+#: model:ir.ui.menu,name:car_repair_maintenance_axis.sub_purchase_requisition_menu
+#, python-format
+msgid "Equipment Purchase Requisition"
+msgstr "طلب شراء المعدات"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_request__partner_req_vendor_id
+msgid "Equipment Purchase Requisition Vendor"
+msgstr "بائع طلب شراء المعدات"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__maintenance_request__priority__3
+msgid "High"
+msgstr "مرتفع"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_equipment_part_line__id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist__id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist_line__id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_equipment__id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_request__id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_stage__id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_project_task__id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_purchase_requisition__id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_res_company__id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_res_config_settings__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: car_repair_maintenance_axis
+#. openerp-web
+#: code:addons/car_repair_maintenance_axis/static/src/xml/maintenance_dashboard.xml:0
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__maintenance_request__state__in_progress
+#, python-format
+msgid "In Progress"
+msgstr "في تقدم"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_request__is_project_task
+msgid "Is Job Order ?"
+msgstr "هو ترتيب العمل؟"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_request__is_material_requisition
+msgid "Is Material Requisition?"
+msgstr "هل طلب المواد؟"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_purchase_requisition__is_requisition
+msgid "Is Order From Maintenance Requisition?"
+msgstr "هل الطلب من طلب الصيانة؟"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_project_task__is_order
+msgid "Is Order From Requisition?"
+msgstr "هل الطلب من الطلب؟"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.actions.act_window,name:car_repair_maintenance_axis.job_action
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_request__project_task_id
+#: model:ir.ui.menu,name:car_repair_maintenance_axis.job_menu
+#: model:ir.ui.menu,name:car_repair_maintenance_axis.main_job_menu
+#: model:ir.ui.menu,name:car_repair_maintenance_axis.sub_job_menu
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_hr_equipment_request_stock
+msgid "Job Order"
+msgstr "طلب الوظيفة"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_equipment_part_line____last_update
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist____last_update
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist_line____last_update
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_equipment____last_update
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_request____last_update
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_stage____last_update
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_project_task____last_update
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_purchase_requisition____last_update
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_res_company____last_update
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_res_config_settings____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_equipment_part_line__write_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist__write_uid
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist_line__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_equipment_part_line__write_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist__write_date
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist_line__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__maintenance_request__priority__1
+msgid "Low"
+msgstr "منخفض"
+
+#. module: car_repair_maintenance_axis
+#. openerp-web
+#: code:addons/car_repair_maintenance_axis/static/src/xml/maintenance_dashboard.xml:0
+#: code:addons/car_repair_maintenance_axis/static/src/xml/maintenance_dashboard.xml:0
+#: code:addons/car_repair_maintenance_axis/static/src/xml/maintenance_dashboard.xml:0
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.res_config_settings_view_form
+#, python-format
+msgid "Maintenance"
+msgstr "صيانة"
+
+#. module: car_repair_maintenance_axis
+#. openerp-web
+#: code:addons/car_repair_maintenance_axis/static/src/js/maintenance_dashboard.js:0
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_equipment__check_ids
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.configure_checklist_form
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.configure_checklist_tree
+#, python-format
+msgid "Maintenance CheckList"
+msgstr "قائمة فحص الصيانة"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.ui.menu,name:car_repair_maintenance_axis.menu_maintenance_checklist
+msgid "Maintenance CheckLists"
+msgstr "قوائم فحص الصيانة"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.actions.act_window,name:car_repair_maintenance_axis.config_checklist_action
+msgid "Maintenance Checklists"
+msgstr "قوائم فحص الصيانة"
+
+#. module: car_repair_maintenance_axis
+#. openerp-web
+#: code:addons/car_repair_maintenance_axis/static/src/xml/maintenance_dashboard.xml:0
+#: model:ir.actions.client,name:car_repair_maintenance_axis.dashboard_action
+#: model:ir.ui.menu,name:car_repair_maintenance_axis.maintenance_dashboard_menu
+#, python-format
+msgid "Maintenance Dashboard"
+msgstr "لوحة معلومات الصيانة"
+
+#. module: car_repair_maintenance_axis
+#. openerp-web
+#: code:addons/car_repair_maintenance_axis/static/src/js/maintenance_dashboard.js:0
+#: model:ir.model,name:car_repair_maintenance_axis.model_maintenance_equipment
+#, python-format
+msgid "Maintenance Equipment"
+msgstr "معدات الصيانة"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.maintenance_material_form
+msgid "Maintenance Equipment Checklists"
+msgstr ""
+
+#. module: car_repair_maintenance_axis
+#: model:mail.template,subject:car_repair_maintenance_axis.maintenance_inprogress_mail
+msgid ""
+"Maintenance InProgress\n"
+"        "
+msgstr "صيانة جارية \ n"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.maintenance_material_form
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_hr_equipment_request_stock
+msgid "Maintenance Plan Material"
+msgstr "مواد خطة الصيانة"
+
+#. module: car_repair_maintenance_axis
+#: model:mail.template,subject:car_repair_maintenance_axis.maintenance_repaire_mail
+msgid ""
+"Maintenance Repaired\n"
+"        "
+msgstr "تم إصلاح الصيانة \ n"
+
+#. module: car_repair_maintenance_axis
+#. openerp-web
+#: code:addons/car_repair_maintenance_axis/static/src/js/maintenance_dashboard.js:0
+#: code:addons/car_repair_maintenance_axis/static/src/js/maintenance_dashboard.js:0
+#: code:addons/car_repair_maintenance_axis/static/src/js/maintenance_dashboard.js:0
+#: code:addons/car_repair_maintenance_axis/static/src/js/maintenance_dashboard.js:0
+#: model:ir.model,name:car_repair_maintenance_axis.model_maintenance_request
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_equipment_part_line__maintenance_id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist__maintenance_id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_checklist_line__maintenance_id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_project_task__maintenance_id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_purchase_requisition__maintenance_id
+#, python-format
+msgid "Maintenance Request"
+msgstr "طلب الصيانة"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_hr_equipment_request_stock
+msgid "Maintenance Request CheckList"
+msgstr "قائمة فحص طلبات الصيانة"
+
+#. module: car_repair_maintenance_axis
+#. openerp-web
+#: code:addons/car_repair_maintenance_axis/static/src/xml/maintenance_dashboard.xml:0
+#, python-format
+msgid "Maintenance Requests"
+msgstr "طلبات الصيانة"
+
+#. module: car_repair_maintenance_axis
+#: model:mail.template,subject:car_repair_maintenance_axis.maintenance_scrap_mail
+msgid ""
+"Maintenance Scrap\n"
+"        "
+msgstr "خردة الصيانة \ n"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model,name:car_repair_maintenance_axis.model_maintenance_stage
+msgid "Maintenance Stage"
+msgstr "مرحلة الصيانة"
+
+#. module: car_repair_maintenance_axis
+#. openerp-web
+#: code:addons/car_repair_maintenance_axis/static/src/js/maintenance_dashboard.js:0
+#, python-format
+msgid "Maintenance Team"
+msgstr "فريق الصيانة"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.view_hr_equipment_request_stock
+msgid "Material Purchase Requisition"
+msgstr "طلب شراء المواد"
+
+#. module: car_repair_maintenance_axis
+#. openerp-web
+#: code:addons/car_repair_maintenance_axis/static/src/xml/maintenance_dashboard.xml:0
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__maintenance_request__state__new
+#, python-format
+msgid "New Request"
+msgstr "طلب جديد"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__maintenance_request__priority__2
+msgid "Normal"
+msgstr "عادي"
+
+#. module: car_repair_maintenance_axis
+#: code:addons/car_repair_maintenance_axis/models/maintenance_request.py:0
+#, python-format
+msgid "Please Select Destination Location."
+msgstr "يرجى تحديد موقع الوجهة."
+
+#. module: car_repair_maintenance_axis
+#: code:addons/car_repair_maintenance_axis/models/maintenance_request.py:0
+#, python-format
+msgid "Please Select Equipment Material Line."
+msgstr "يرجى تحديد خط مواد المعدات."
+
+#. module: car_repair_maintenance_axis
+#: code:addons/car_repair_maintenance_axis/models/maintenance_request.py:0
+#, python-format
+msgid "Please Select Equipment Purchase Requisition Vendor."
+msgstr "يرجى تحديد بائع طلب شراء المعدات."
+
+#. module: car_repair_maintenance_axis
+#: code:addons/car_repair_maintenance_axis/models/maintenance_request.py:0
+#, python-format
+msgid "Please Select Scheduled Date."
+msgstr "يرجى تحديد التاريخ المقرر."
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_request__priority
+msgid "Priority"
+msgstr "الأولوية"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_request__product_id
+msgid "Product"
+msgstr "المنتوج"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model,name:car_repair_maintenance_axis.model_purchase_requisition
+msgid "Purchase Requisition"
+msgstr "طلب الشراء"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_equipment_part_line__qty
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_request__qty
+msgid "Quantity"
+msgstr "كمية"
+
+#. module: car_repair_maintenance_axis
+#. openerp-web
+#: code:addons/car_repair_maintenance_axis/static/src/xml/maintenance_dashboard.xml:0
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__maintenance_request__state__repair
+#, python-format
+msgid "Repaired"
+msgstr "تم الاصلاح"
+
+#. module: car_repair_maintenance_axis
+#. openerp-web
+#: code:addons/car_repair_maintenance_axis/static/src/xml/maintenance_dashboard.xml:0
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__maintenance_request__state__scrap
+#, python-format
+msgid "Scrap"
+msgstr "خردة"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.res_config_settings_view_form
+msgid "Send an email when click on button"
+msgstr "إرسال بريد إلكتروني عند النقر فوق الزر"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_project_task__sequence_num
+msgid "Sequence"
+msgstr "تسلسل"
+
+#. module: car_repair_maintenance_axis
+#: model_terms:ir.ui.view,arch_db:car_repair_maintenance_axis.res_config_settings_view_form
+msgid "Shipping"
+msgstr "شحن"
+
+#. module: car_repair_maintenance_axis
+#. openerp-web
+#: code:addons/car_repair_maintenance_axis/static/src/xml/maintenance_dashboard.xml:0
+#: code:addons/car_repair_maintenance_axis/static/src/xml/maintenance_dashboard.xml:0
+#: code:addons/car_repair_maintenance_axis/static/src/xml/maintenance_dashboard.xml:0
+#: code:addons/car_repair_maintenance_axis/static/src/xml/maintenance_dashboard.xml:0
+#, python-format
+msgid "Stage"
+msgstr "منصة"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_request__state
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_stage__status
+msgid "Status"
+msgstr "حالة"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model,name:car_repair_maintenance_axis.model_project_task
+msgid "Task"
+msgstr "المهمة"
+
+#. module: car_repair_maintenance_axis
+#. openerp-web
+#: code:addons/car_repair_maintenance_axis/static/src/xml/maintenance_dashboard.xml:0
+#, python-format
+msgid "Team"
+msgstr "فريق"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_equipment_part_line__uom_id
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_request__uom_id
+msgid "UOM"
+msgstr "UOM"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields.selection,name:car_repair_maintenance_axis.selection__maintenance_request__priority__0
+msgid "Very Low"
+msgstr "منخفض جدًا"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model,name:car_repair_maintenance_axis.model_equipment_part_line
+msgid "equipment.part.line"
+msgstr "المعدات. جزء"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_maintenance_equipment__line_ids
+msgid "line"
+msgstr "خط"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model,name:car_repair_maintenance_axis.model_maintenance_checklist
+msgid "maintenance.checklist"
+msgstr "قائمة فحص الصيانة"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model,name:car_repair_maintenance_axis.model_maintenance_checklist_line
+msgid "maintenance.checklist.line"
+msgstr "Maintenance.checklist.line"
+
+#. module: car_repair_maintenance_axis
+#: model:ir.model.fields,field_description:car_repair_maintenance_axis.field_equipment_part_line__product_id
+msgid "product"
+msgstr "المنتوج"

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="form_view_car_repair_team" model="ir.ui.view">
+        <field name="name">car.repair.form.team</field>
+        <field name="model">car.repair.team</field>
+        <field name="arch" type="xml">
+            <form string="Car Repair Team">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="id_default_team"/>
+                        </group>
+                        <group>
+                            <field name="leader_id"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Team Members">
+                            <field name="team_members_ids">
+                                <tree string="Team Members" editable="bottom">
+                                    <field name="name"/>
+                                    <field name="login"/>
+                                    <field name="lang"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="tree_view_car_repair_team" model="ir.ui.view">
+        <field name="name">car.repair.tree.team</field>
+        <field name="model">car.repair.team</field>
+        <field name="arch" type="xml">
+            <tree string="Care Repair Team">
+                <field name="name"/>
+                <field name="id_default_team"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="action_car_repair_teams" model="ir.actions.act_window">
+        <field name="name">Car Repair Teams</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">car.repair.team</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <menuitem id="car_repair_teams"
+              name="Car Repair Teams"
+              parent="menu_car_service_main"
+              action="action_car_repair_teams"
+              sequence="3"/>
+
+</odoo>

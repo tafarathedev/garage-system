@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+
+        <record id="configure_checklist_tree" model="ir.ui.view">
+            <field name="name">maintenance.checklist.tree</field>
+            <field name="model">maintenance.checklist</field>
+            <field name="arch" type="xml">
+                <tree string="Service Repair CheckList">
+                    <field name="name"/>
+                    <field name="desc"/>
+                    <field name="equipment_id"/>
+                    <field name="maintenance_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="configure_checklist_form" model="ir.ui.view">
+            <field name="name">maintenance.checklist.form</field>
+            <field name="model">maintenance.checklist</field>
+            <field name="arch" type="xml">
+                <form string="Service Repair CheckList">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="equipment_id"/>
+                        </group>
+                        <group>
+                            <field name="desc"/>
+                            <field name="maintenance_id"/>
+                        </group>
+                    </group>
+                </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="config_checklist_action" model="ir.actions.act_window">
+            <field name="name">Service Repair Checklists</field>
+            <field name="res_model">maintenance.checklist</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem
+            id="menu_maintenance_checklist"
+            name="Service Repair CheckList"
+            parent="menu_car_repair_main"
+            action="config_checklist_action"
+            sequence="3"/>
+    </data>
+</odoo>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="car_repair_estimate_template" name="Car Repair Estimate">
+            <div class="page">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <img t-if="doc.create_uid.company_id.logo"
+                             t-att-src="image_data_uri(doc.create_uid.company_id.logo)" style="max-height: 100px;"
+                             alt="Logo"/>
+                    </div>
+                    <div class="col-xs-8">
+                        <h2>Company Name</h2>
+                        <p>Address Line 1</p>
+                        <p>Address Line 2</p>
+                        <p>Phone: +1 555-1234</p>
+                        <p>Email: info@company.com</p>
+                    </div>
+                </div>
+                <hr/>
+
+                <div class="col-xs-6 text-right">
+                    <h3>Repair Estimate:</h3>
+                    <table class="table table-condensed">
+                        <tbody>
+                            <tr>
+                                <th>Date :</th>
+                                <td>
+                                    <span t-field="doc.create_date"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Name :</th>
+                                <td>
+                                    <span t-field="doc.display_name"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Estimate Number :</th>
+                                <td>
+                                    <span t-field="doc.name"/>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <hr/>
+
+                <div class="row">
+                    <div class="col-xs-6">
+                        <h3>Repair Details:</h3>
+
+                        <table class="table table-condensed">
+                            <tbody>
+                                <tr>
+                                    <th>Description :</th>
+                                    <td>
+                                        <span t-field="doc.description"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Cost :</th>
+                                    <td>
+                                        <span t-field="doc.cost"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Time (in hours) :</th>
+                                    <td>
+                                        <span t-field="doc.time"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="col-xs-6">
+                        <h3>Parts Required:</h3>
+
+                        <table class="table table-condensed">
+                            <tbody>
+                                <tr>
+                                    <th>Name :</th>
+                                    <th>Quantity :</th>
+                                </tr>
+                                <tr t-foreach="doc.parts_required" t-as="part">
+                                    <td>
+                                        <span t-field="part.display_name"/>
+                                    </td>
+                                    <td>
+                                        <span t-field="part.product_tmpl_id.uom_id.name"/> x
+                                        <span t-field="part.qty_available"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <template id="car_repair_estimate">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="doc">
+                    <t t-call="car_repair_maintenance_axis.car_repair_estimate_template"/>
+                </t>
+            </t>
+        </template>
+
+        <report id="action_car_repair_estimate_print"
+                string="Car Repair Estimate"
+                model="car.repair.estimate"
+                report_type="qweb-pdf"
+                file="Car Repair Estimate"
+                name="car_repair_maintenance_axis.car_repair_estimate"
+        />
+
+    </data>
+</odoo>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_car_form" model="ir.ui.view">
+            <field name="name">car.form</field>
+            <field name="model">car</field>
+            <field name="arch" type="xml">
+                <form string="Car Form">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="owner_id"/>
+                                <field name="name"/>
+                                <field name="brand"/>
+                                <field name="model"/>
+                                <field name="car_notes"/>
+                            </group>
+                            <group>
+                                <field name="car_num"/>
+                                <field name="manufacturing_year"/>
+                                <field name="fuel_type"/>
+                                <field name="color"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_car_tree">
+            <field name="name">Cars Tree</field>
+            <field name="model">car</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="car_num"/>
+                    <field name="brand"/>
+                    <field name="model"/>
+                    <field name="manufacturing_year"/>
+                    <field name="fuel_type"/>
+                    <field name="color"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_cars" model="ir.actions.act_window">
+            <field name="name">Cars</field>
+            <field name="res_model">car</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="car_repair_main_menu" name="Car Repair"/>
+		<menuitem id="menu_cars_main"
+                  name="Car"
+                      parent="car_repair_main_menu"
+                  sequence="1"/>
+
+        <menuitem id="menu_cars"
+                  name="Cars"
+                  parent="menu_cars_main"
+                  action="car_repair_maintenance_axis.action_cars"
+                  sequence="1"/>
+
+    </data>
+
+</odoo>

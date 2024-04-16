@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_car_parts_form" model="ir.ui.view">
+            <field name="name">car.parts.form</field>
+            <field name="model">car.parts</field>
+            <field name="arch" type="xml">
+                <form string="Car Parts Form">
+                    <sheet>
+                        <group>
+                            <field name="part_name"/>
+                            <field name="description"/>
+                            <field name="product_id"/>
+<!--                            <field name="product_variant_id"/>-->
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_car_parts_tree">
+            <field name="name">Car Parts Tree</field>
+            <field name="model">car.parts</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="part_name"/>
+                    <field name="description"/>
+                    <field name="product_id"/>
+<!--                    <field name="product_variant_id"/>-->
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_car_parts" model="ir.actions.act_window">
+            <field name="name">Car Parts</field>
+            <field name="res_model">car.parts</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_car_parts"
+                  name="Car Parts"
+                  parent="menu_cars_main"
+                  action="car_repair_maintenance_axis.action_car_parts"
+                  sequence="2"/>
+
+    </data>
+
+</odoo>

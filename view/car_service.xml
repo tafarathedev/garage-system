@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_car_service_form" model="ir.ui.view">
+            <field name="name">car.service.form</field>
+            <field name="model">car.service</field>
+            <field name="arch" type="xml">
+                <form string="Car Service Form">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="description"/>
+                            <field name="price"/>
+                            <field name="duration"/>
+                            <field name="service_type_id"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_car_service_tree">
+            <field name="name">Car Service Tree</field>
+            <field name="model">car.service</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="description"/>
+                    <field name="price"/>
+                    <field name="duration"/>
+                    <field name="service_type_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_car_service" model="ir.actions.act_window">
+            <field name="name">Car Service</field>
+            <field name="res_model">car.service</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+		<menuitem id="menu_car_service_main"
+                  name="Car Services"
+                  parent="car_repair_main_menu"
+                  sequence="4"/>
+
+        <menuitem id="menu_car_service"
+                  name="Car Service"
+                  parent="menu_car_service_main"
+                  action="car_repair_maintenance_axis.action_car_service"
+                  sequence="1"/>
+
+    </data>
+
+</odoo>

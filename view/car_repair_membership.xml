@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- View for the Car Servicing Membership -->
+        <record id="view_car_servicing_membership_form" model="ir.ui.view">
+            <field name="name">car.servicing.membership.form</field>
+            <field name="model">car.servicing.membership</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="customer"/>
+                                <field name="membership_beginning_date"/>
+                                <field name="notes"/>
+                            </group>
+                            <group>
+                                <field name="validity_period"/>
+                                <field name="car_id"/>
+                                <field name="membership_expiration_date"/>
+                                <field name="amount"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Membership Plan">
+                                <group>
+                                    <group>
+                                        <field name="membership_plan" widget="selection"/>
+                                    </group>
+                                    <group>
+                                        <field name="services" widget="many2many_tags" options="{'no_create': True}"/>
+                                    </group>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_car_servicing_membership_tree" model="ir.ui.view">
+            <field name="name">car.servicing.membership.tree</field>
+            <field name="model">car.servicing.membership</field>
+            <field name="arch" type="xml">
+                <tree string="Car Servicing Membership Form">
+                    <field name="name"/>
+                    <field name="validity_period"/>
+                    <field name="customer"/>
+                    <field name="car_id"/>
+                    <field name="membership_beginning_date"/>
+                    <field name="membership_expiration_date"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_car_repair_membership" model="ir.actions.act_window">
+            <field name="name">Car Repair Membership</field>
+            <field name="res_model">car.servicing.membership</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_car_repair_membership_main"
+                  name="Membership Plans"
+                  parent="car_repair_main_menu"
+                  sequence="3"/>
+
+        <menuitem id="menu_car_repair_membership"
+                  name="Car Repair Membership"
+                  parent="menu_car_repair_membership_main"
+                  action="car_repair_maintenance_axis.action_car_repair_membership"
+                  sequence="1"/>
+
+    </data>
+</odoo>

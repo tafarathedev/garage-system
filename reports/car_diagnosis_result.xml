@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="car_diagnosis_result_template" name="Car Diagnosis Result">
+            <div class="page">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <img t-if="doc.create_uid.company_id.logo"
+                             t-att-src="image_data_uri(doc.create_uid.company_id.logo)" style="max-height: 100px;"
+                             alt="Logo"/>
+                    </div>
+                    <div class="col-xs-8">
+                        <h2>Company Name</h2>
+                        <p>Address Line 1</p>
+                        <p>Address Line 2</p>
+                        <p>Phone: +1 555-1234</p>
+                        <p>Email: info@company.com</p>
+                    </div>
+                </div>
+                <hr/>
+
+                <div class="row">
+                    <div class="col-xs-6">
+                        <h3>Customer Details:</h3>
+                        <table class="table table-condensed">
+                            <tbody>
+                                <tr>
+                                    <th>Name :</th>
+                                    <td>
+                                        <span t-field="doc.customer.name"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Mobile :</th>
+                                    <td>
+                                        <span t-field="doc.customer.mobile"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Email :</th>
+                                    <td>
+                                        <span t-field="doc.customer.email"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr/>
+
+                    <div class="col-xs-6 text-right">
+                        <h3>Car Details:</h3>
+                        <table class="table table-condensed">
+                            <tbody>
+                                <tr>
+                                    <th>Brand:</th>
+                                    <td>
+                                        <span t-field="doc.car_id.brand"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Model:</th>
+                                    <td>
+                                        <span t-field="doc.car_id.model"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr/>
+
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h3>Diagnosis Notes:</h3>
+                            <p>
+                                <span t-field="doc.description"/>
+                            </p>
+                        </div>
+                    </div>
+                    <hr/>
+                </div>
+                <hr/>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h3>Car Details:</h3>
+                        <table class="table table-condensed">
+                            <tbody>
+                                <tr>
+                                    <th>Brand:</th>
+                                    <td>
+                                        <span t-field="doc.brand"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Model:</th>
+                                    <td>
+                                        <span t-field="doc.model"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Repair Date:</th>
+                                    <td>
+                                        <span t-field="doc.date_done"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <hr/>
+
+                <div class="row">
+                    <div class="col-xs-6">
+                        <h3>Signature:</h3>
+                        <p>Technician</p>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        <h3>Signature:</h3>
+                        <p>Client</p>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <template id="car_diagnosis_result">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="doc">
+                    <t t-call="car_repair_maintenance_axis.car_diagnosis_result_template"/>
+                </t>
+            </t>
+        </template>
+
+        <report id="action_car_diagnosis_result_print"
+                string="Car Diagnosis Result"
+                model="car.repair.diagnosis"
+                report_type="qweb-pdf"
+                file="Car Diagnosis Result"
+                name="car_repair_maintenance_axis.car_diagnosis_result"
+        />
+
+    </data>
+</odoo>

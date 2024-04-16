@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="car_repair_estimate_form_view">
+            <field name="name">car.repair.estimate.form</field>
+            <field name="model">car.repair.estimate</field>
+            <field name="arch" type="xml">
+                <form string="Car Repair Estimate">
+                    <header>
+<!--                        <button string="Save" type="object"/>-->
+<!--                        <button string="Cancel" special="cancel"/>-->
+                    </header>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="display_name"/>
+                                <field name="description"/>
+                            </group>
+                            <group>
+                                <field name="cost"/>
+                                <field name="time"/>
+                            </group>
+                        </group>
+                        <group>
+                            <field name="parts_required" label="Parts Required"/>
+                        </group>
+                            <group class="oe_subtotal_footer oe_right" colspan="2" name="sale_total">
+                                <div class="oe_subtotal_footer_separator oe_inline o_td_label">
+                                    <label for="total_cost" />
+                                </div>
+                                <field name="total_cost" nolabel="1" sum="Total" class="oe_subtotal_footer_separator"/>
+                            </group>
+                            <div class="clearfix"/>
+<!--                        </group>-->
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="car_repair_estimate_tree_view" model="ir.ui.view">
+            <field name="name">car.repair.form.tree</field>
+            <field name="model">car.repair.estimate</field>
+            <field name="arch" type="xml">
+                <tree string="Car Repair Estimate Form">
+                    <field name="display_name"/>
+                    <field name="description"/>
+                    <field name="cost"/>
+                    <field name="time"/>
+                    <field name="parts_required"/>
+                </tree>
+            </field>
+        </record>
+
+         <record id="car_repair_estimate_sequence" model="ir.sequence">
+             <field name="name">Car Repair Estimate Sequence</field>
+             <field name="code">car.repair.estimate.sequence</field>
+             <field name="prefix">CE</field>
+             <field name="padding">3</field>
+         </record>
+
+        <record id="action_car_repair_estimate_form" model="ir.actions.act_window">
+            <field name="name">Car Repair Estimate Form</field>
+            <field name="res_model">car.repair.estimate</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_car_repair_estimate"
+                  name="Car Repair Estimate"
+                  parent="menu_car_repair_main"
+                  action="car_repair_maintenance_axis.action_car_repair_estimate_form"
+                  sequence="2"/>
+
+    </data>
+</odoo>

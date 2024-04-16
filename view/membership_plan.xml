@@ -1,0 +1,52 @@
+<odoo>
+    <data>
+
+        <!-- Membership Plan Form View -->
+        <record id="view_membership_plan_form" model="ir.ui.view">
+            <field name="name">membership.plan.form</field>
+            <field name="model">membership.plan</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="description"/>
+                            <field name="price"/>
+                        </group>
+                        <notebook>
+                            <page string="Services Included">
+                                <field name="services" widget="many2many_tags"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_membership_plan_tree" model="ir.ui.view">
+            <field name="name">membership.plan.tree</field>
+            <field name="model">membership.plan</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="description"/>
+                    <field name="price"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Membership Plan Action -->
+        <record id="action_membership_plan" model="ir.actions.act_window">
+            <field name="name">Membership Plans</field>
+            <field name="res_model">membership.plan</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_membership_plan"
+                  name="Membership Plan"
+                  parent="menu_car_repair_membership_main"
+                  action="car_repair_maintenance_axis.action_membership_plan"
+                  sequence="2"/>
+
+    </data>
+</odoo>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_job_roles_form" model="ir.ui.view">
+        <field name="name">Job Roles Form</field>
+        <field name="model">job.roles</field>
+        <field name="arch" type="xml">
+            <form string="Job Roles">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="description"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_job_roles_tree">
+        <field name="name">Job Roles Tree</field>
+        <field name="model">job.roles</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="description"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_job_roles" model="ir.actions.act_window">
+        <field name="name">Job Roles</field>
+        <field name="res_model">job.roles</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_job_roles"
+              name="Job Roles"
+              parent="car_repair_main_menu"
+              action="car_repair_maintenance_axis.action_job_roles"
+              sequence="5"/>
+
+    <!--    <record id="view_res_users_form_inherit" model="ir.ui.view">-->
+    <!--        <field name="name">res.users.form.inherit</field>-->
+    <!--        <field name="model">res.users</field>-->
+    <!--        <field name="inherit_id" ref="base.view_users_form"/>-->
+    <!--        <field name="arch" type="xml">-->
+    <!--            <xpath expr="//sheet/notebook/page[@name='access_rights']" position="inside">-->
+    <!--                <group string="Car Repair">-->
+    <!--                    <field name="job_roles_ids" widget="many2many_tags"/>-->
+    <!--                </group>-->
+    <!--                <page string="Job Roles">-->
+    <!--                    <field name="job_roles_ids"/>-->
+    <!--                    -->
+    <!--                </page>-->
+    <!--            </xpath>-->
+    <!--        </field>-->
+    <!--    </record>-->
+
+</odoo>

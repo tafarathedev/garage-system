@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="car_repair_receipt_view_template" name="Car Repair Receipt">
+            <div class="page">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <img t-if="doc.create_uid.company_id.logo"
+                             t-att-src="image_data_uri(doc.create_uid.company_id.logo)" style="max-height: 100px;"
+                             alt="Logo"/>
+                    </div>
+                    <div class="col-xs-8">
+                        <h2>Company Name</h2>
+                        <p>Address Line 1</p>
+                        <p>Address Line 2</p>
+                        <p>Phone: +1 555-1234</p>
+                        <p>Email: info@company.com</p>
+                    </div>
+                </div>
+                <hr/>
+
+                <div class="col-xs-6 text-right">
+                    <h3>Receipt of Order:</h3>
+                    <p>Date:
+                        <span t-field="doc.create_date"/>
+                    </p>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-6">
+                        <h3>Customer Details:</h3>
+
+                        <table class="table table-condensed">
+                            <tbody>
+                                <tr>
+                                    <th>Name :</th>
+                                    <td>
+                                        <span t-field="doc.customer.name"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Mobile :</th>
+                                    <td>
+                                        <span t-field="doc.mobile"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Email :</th>
+                                    <td>
+                                        <span t-field="doc.email"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </div>
+                <hr/>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h3>Car Details:</h3>
+                        <table class="table table-condensed">
+                            <tbody>
+                                <tr>
+                                    <th>Brand:</th>
+                                    <td>
+                                        <span t-field="doc.car_id.brand"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Model:</th>
+                                    <td>
+                                        <span t-field="doc.car_id.model"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Repair Date:</th>
+                                    <td>
+                                        <span t-field="doc.repair_date"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <hr/>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h3>Notes:</h3>
+                        <p>
+                            <span t-field="doc.repair_notes"/>
+                        </p>
+                    </div>
+                </div>
+                <hr/>
+            </div>
+        </template>
+
+        <template id="car_repair_receipt">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="doc">
+                    <t t-call="car_repair_maintenance_axis.car_repair_receipt_view_template"/>
+                </t>
+            </t>
+        </template>
+
+        <report id="action_car_repair_receipt_print"
+                string="Car Repair Receipt"
+                model="car.repair.form"
+                report_type="qweb-pdf"
+                file="Car Repair Receipt Report"
+                name="car_repair_maintenance_axis.car_repair_receipt"
+        />
+
+    </data>
+</odoo>
